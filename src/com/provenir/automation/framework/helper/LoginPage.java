@@ -38,9 +38,9 @@ public class LoginPage {
 			username.sendKeys(propertiesMap.get("username"));
 			password.sendKeys(propertiesMap.get("password"));
 			loginBtn.click();
-			Util.waitForAJAX();
-			Util.waitForLoaderToFinish();
-			Util.waitForAJAX();
+			Util.waitForAJAX(driver);
+			Util.waitForLoaderToFinish(driver);
+			Util.waitForAJAX(driver);
 		}
 		catch(Exception e)
 		{
@@ -57,8 +57,8 @@ public class LoginPage {
 			username.sendKeys(propertiesMap.get("username"));
 			password.sendKeys(propertiesMap.get("password"));
 			loginBtn.click();
-			Util.waitForLoaderToFinish();
-			Util.waitForAJAX();
+			Util.waitForLoaderToFinish(driver);
+			Util.waitForAJAX(driver);
 		}
 		catch(Exception e)
 		{
@@ -75,8 +75,8 @@ public class LoginPage {
 			username.sendKeys(propertiesMap.get("username"));
 			password.sendKeys(propertiesMap.get("password"));
 			loginBtn.click();
-			Util.waitForLoaderToFinish();
-			Util.waitForAJAX();
+			Util.waitForLoaderToFinish(driver);
+			Util.waitForAJAX(driver);
 		}
 		catch(Exception e)
 		{

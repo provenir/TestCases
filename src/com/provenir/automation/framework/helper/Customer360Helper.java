@@ -48,72 +48,73 @@ public class Customer360Helper {
 	private String region = "state";
 
 	public void clickAddressLink() {
-		Util.waitForAJAX();
-		Util.waitForElement(addressLink, 20);
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver, addressLink, 20);
 		addressLink.click();
-		Util.waitForLoaderToFinish();
+		Util.waitForLoaderToFinish(driver);
 	}
 
 	public void clickAddBtnOfAddressLink() {
-		Util.waitForElement(addBtnOnAddress, 10);
+		Util.waitForElement(driver, addBtnOnAddress, 10);
 		addBtnOnAddress.click();
-		Util.waitForLoaderToFinish();
+		Util.waitForLoaderToFinish(driver);
 	}
 
 	public void verifyAddressTitle() {
-		Util.waitForAJAX();
-		Util.waitForElement(addressTitle, 20);
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver, addressTitle, 20);
 		String title = addressTitle.getText().trim();
 		Assert.assertEquals("Add Address", title);
 	}
 
 	public void enterAddressType(String option) {
-		Util.waitForAJAX();
-		Util.scrollUp();
-		Util.enableAllDropdowns();
-		Util.waitForElementPresent(By.xpath(addressType), 20);
+		Util.waitForAJAX(driver);
+		Util.scrollUp(driver);
+		Util.enableAllDropdowns(driver);
+		Util.waitForElementPresent(driver,By.xpath(addressType), 20);
 		option = "Mailing";
-		Util.selectItemFromList(addressType, option);
+		Util.selectItemFromList(driver,addressType, option);
 	}
 
 	public void selectCountry(String option) {
-		Util.enableAllDropdowns();
-		Util.waitForElementPresent(By.xpath(country), 20);
+		Util.enableAllDropdowns(driver);
+		Util.waitForElementPresent(driver,By.xpath(country), 20);
 		option = "United States";
-		Util.selectItemFromList(country, option);
+		Util.selectItemFromList(driver,country, option);
 	}
 
 	public void enterAddressLine() {
-		Util.waitForAJAX();
-		Util.waitForElement(addressLine, 10);
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver,addressLine, 10);
 		addressLine.sendKeys("address line 1");
 	}
 
 	public void enterPostalCode() {
-		Util.waitForAJAX();
-		Util.waitForElement(postalCode, 20);
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver,postalCode, 20);
 		postalCode.sendKeys("10005");
 		postalCodeImage.click();
-		Util.waitForLoaderToFinish();
+		Util.waitForLoaderToFinish(driver);
 	}
 
 	public void enterCity() {
-		Util.waitForElement(city, 10);
+		Util.waitForElement(driver,city, 10);
 		city.sendKeys("NY");
 	}
 
 	public void enterRegion(String option) {
-		Util.enableAllDropdowns();
-		Util.waitForElementPresent(By.xpath(region), 20);
+		postalCodeImage.click();
+		Util.enableAllDropdowns(driver);
+		Util.waitForElementPresent(driver,By.xpath(region), 20);
 		option = "New York";
-		Util.selectItemFromList(country, option);
+		Util.selectItemFromList(driver,country, option);
 	}
 
 	public void saveAddress() {
-		Util.waitForAJAX();
-		Util.waitForElement(saveAddress, 15);
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver,saveAddress, 15);
 		saveAddress.click();
-		Util.waitForLoaderToFinish();
+		Util.waitForLoaderToFinish(driver);
 	}
 
 }

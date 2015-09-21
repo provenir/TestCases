@@ -1,7 +1,5 @@
 package com.provenir.automation.framework.utility;
 
-import static com.provenir.automation.framework.utility.TestCaseInitializer.driver;
-
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -23,6 +21,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.provenir.automation.framework.utility.Util;
 
 public class Util {
+	
+	WebDriver driver;
 	
 	public static final int DEFAULT_ELEMENT_WAIT = 5;
 	public static final int DEFAULT_PAGE_WAIT = 5;
@@ -47,7 +47,7 @@ public class Util {
 	 * Waits for the completion of Ajax jQuery processing by checking
 	 * "return jQuery.active == 0" condition.
 	 */
-	public static boolean waitForAJAX() {
+	public static boolean waitForAJAX(WebDriver driver) {
 		boolean jQcondition = false;
 		try {
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); // nullify
@@ -79,7 +79,7 @@ public class Util {
 	 * @return 
 	 * 
 	 */
-	public static WebElement waitForElementPresent(By locator, int timeout) {
+	public static WebElement waitForElementPresent(WebDriver driver, By locator, int timeout) {
 		try {
 			driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS); // nullify
 			// implicitlyWait()
@@ -96,7 +96,7 @@ public class Util {
 	 * displayed or not. And returns the first WebElement using the given
 	 * method.
 	 */
-	public static WebElement waitForElement(final WebElement locator,
+	public static WebElement waitForElement(WebDriver driver, final WebElement locator,
 			int timeOutInSeconds) {
 		WebElement element;
 		try {
@@ -138,7 +138,7 @@ public class Util {
 	/**
 	 * Enable all searchable dropdowns to generate customname and customid
 	 */
-	public static void enableAllDropdowns() {
+	public static void enableAllDropdowns(WebDriver driver) {
 		Actions action = new Actions(driver);
 		lstElements = driver.findElements(By
 				.xpath(".//span[@class='ui-combobox notYetBind']/a"));
@@ -159,7 +159,7 @@ public class Util {
 	 * @param option
 	 *            : value to select
 	 */
-	public static void selectItemFromList(String customName, String option) {
+	public static void selectItemFromList(WebDriver driver,String customName, String option) {
 		try {
 			WebElement searchTxtBox = driver.findElement(By
 					.cssSelector("input[customname='" + customName + "']"));
@@ -167,7 +167,7 @@ public class Util {
 			searchTxtBox.clear();
 			searchTxtBox.sendKeys(option);
 			Util.waitForElementPresent(
-					By.xpath(".//ul[@customid='" + customName + "']/li[1]"), 5);
+					driver, By.xpath(".//ul[@customid='" + customName + "']/li[1]"), 5);
 
 			driver.findElement(
 					By.xpath(".//ul[@customid='" + customName + "']/li[1]"))
@@ -187,13 +187,13 @@ public class Util {
 	 * @param option
 	 *            : Value To Select
 	 */
-	public static void selectItemFromList(WebElement locator, String option) {
-		waitForElement(locator, 10);
+	public static void selectItemFromList(WebDriver driver, WebElement locator, String option) {
+		waitForElement(driver, locator, 10);
 		Select select = new Select(locator);
 		select.selectByVisibleText(option);
 	}
 
-	public static void selectCheckBox(String checkBoxname, int j) {
+	public static void selectCheckBox(WebDriver driver, String checkBoxname, int j) {
 
 		for (int i = 0; i <= j; i++) {
 			driver.findElement(By.name((checkBoxname + i))).click();
@@ -201,16 +201,16 @@ public class Util {
 
 	}
 
-	public static void scrollDown() {
+	public static void scrollDown(WebDriver driver) {
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 200)");
 	}
 	
-	public static void scrollUp()
+	public static void scrollUp(WebDriver driver)
 	{
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -200)");
 	}
 
-	public static void waitForLoaderToFinish() {
+	public static void waitForLoaderToFinish(WebDriver driver) {
 		try {
 			new WebDriverWait(driver, 180).until(ExpectedConditions
 					.invisibilityOfElementLocated(By
@@ -220,5 +220,25 @@ public class Util {
 			System.out.println(e.getMessage());
 		}
 	}
-	
+	public static void selectOptionFromDropDown(WebDriver driver,
+			   String customName, String option) {
+			  try {
+			   WebElement searchTxtBox = driver.findElement(By
+			     .cssSelector("input[customname='" + customName + "']"));
+
+			   searchTxtBox.clear();
+			   searchTxtBox.sendKeys(option);
+
+			   WebElement ele = driver.findElement(By.xpath(".//ul[@customid='"
+			     + customName + "']/li[1]"));
+			   Select select = new Select(ele);
+			   select.selectByVisibleText(option);
+			   ele.click();
+
+			  } catch (Exception e) {
+			   e.printStackTrace();
+			  }
+			  driver.manage().timeouts().implicitlyWait(0, TimeUnit.MILLISECONDS); // nullify
+			  // implicitlyWait()
+			 }
 }

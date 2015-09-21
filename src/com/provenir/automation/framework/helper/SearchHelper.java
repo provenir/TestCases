@@ -41,14 +41,14 @@ public class SearchHelper {
 		
 		searchBox.sendKeys(propertiesMap.get("searchCustomer"));
 		searchBox.sendKeys(Keys.ENTER);
-		Util.waitForLoaderToFinish();
-		Util.waitForAJAX();
+		Util.waitForLoaderToFinish(driver);
+		Util.waitForAJAX(driver);
 		
-		Util.waitForElementPresent(By.xpath(".//*[@id='transSrchRes']//span[contains(.,'Load')]"), 40);
+		Util.waitForElementPresent(driver,By.xpath(".//*[@id='transSrchRes']//span[contains(.,'Load')]"), 20);
 		searchedCust.click();
 		loadCustomer.click();
-		Util.waitForLoaderToFinish();
-		Util.waitForAJAX();
+		Util.waitForLoaderToFinish(driver);
+		Util.waitForAJAX(driver);
 	}
 
 }

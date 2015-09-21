@@ -1,32 +1,35 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Demo Search test suite" parallel="tests" thread-count="3">
+<suite name="Automation test suite" parallel="tests" thread-count="3">
 
 
 	<parameter name="environment"  value="src/com/provenir/automation/framework/config/Env.properties"/>
 
+<listeners>
+        <listener class-name="com.provenir.automation.framework.utility.Listener" />
+    </listeners>
 
-	<test name="Firefox Test">
-	<parameter name="browser" value="Firefox" />
+<!--	<test name="IE Test">
+	<parameter name="browser" value="Internet Explorer" />
 		<classes>
-			<class name="com.provenir.automation.framework.testcases.Credit360" />
+			<class name="com.provenir.automation.framework.testcases.Customer360" />
 		</classes>
 	</test>
-
 	
-	<test name="IE Test">
-	<parameter name="browser" value="InternetExplorer" />
+	-->
+	<test name="Firefox Test">
+	<parameter name="browser" value="Firefox" />
 		<classes>
 			<class name="com.provenir.automation.framework.testcases.Collateral360" />
 		</classes>
 	</test>
-
+<!--
 
 	<test name="Chrome Test">
 	<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="com.provenir.automation.framework.testcases.Credit360" />
 		</classes>
-	</test>
+	</test>-->
 
 	
 </suite>

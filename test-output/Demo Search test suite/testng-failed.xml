@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" name="Failed suite [Demo Search test suite]" parallel="tests">
+<suite thread-count="3" name="Failed suite [Demo Search test suite]" parallel="tests">
+  <parameter name="environment" value="src/com/provenir/automation/framework/config/Env.properties"/>
   <parameter name="browser" value="Chrome"/>
   <test name="Chrome Test(failed)" parallel="tests">
     <parameter name="browser" value="Chrome"/>
     <classes>
+      <class name="com.provenir.automation.framework.testcases.Credit360">
+        <methods>
+          <include name="test1_addAndSaveBorrower"/>
+          <include name="beforeMethod"/>
+          <include name="landingPage"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Credit360 -->
+      <class name="com.provenir.automation.framework.testcases.Customer360">
+        <methods>
+          <include name="landingPage"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Customer360 -->
       <class name="com.provenir.automation.framework.testcases.Collateral360">
         <methods>
           <include name="beforeMethod"/>
-          <include name="setUp"/>
-          <include name="test3_verifyCollateralTitle"/>
-          <include name="initialize"/>
-          <include name="tearDown"/>
+          <include name="landingPage"/>
+          <include name="beforeTest"/>
         </methods>
       </class> <!-- com.provenir.automation.framework.testcases.Collateral360 -->
     </classes>
