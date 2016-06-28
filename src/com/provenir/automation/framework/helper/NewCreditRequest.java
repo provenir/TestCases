@@ -113,6 +113,13 @@ public class NewCreditRequest {
 		Util.selectItemFromList(driver, lendingProcess, option);
 	}
 
+	public void enterLendingProcessForBOA(String wflw) {
+		Util.enableAllDropdowns(driver);
+		Util.waitForElementPresent(driver, By.xpath(lendingProcess), 10);
+		wflw = "Workflow for Small Business";
+		Util.selectItemFromList(driver, lendingProcess, wflw);
+	}
+
 	public boolean getSavedWorkflowName() {
 		Util.waitForElement(driver, lendingProcessOnRequestSummary, 10);
 		String str = lendingProcessOnRequestSummary.getText();
@@ -157,6 +164,12 @@ public class NewCreditRequest {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void enterCreditName(String value) {
+		Util.waitForElement(driver, creditName, 5);
+		creditName.clear();
+		creditName.sendKeys(value);
 	}
 
 	public void enterAggrementDate(

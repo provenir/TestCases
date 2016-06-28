@@ -435,7 +435,7 @@ public class Collateral360Helper {
 
 	public void clickCollateralLink() throws InterruptedException {
 		Util.waitForLoaderToFinish(driver);
-		
+
 		collateralLink.click();
 		Util.scrollDown(driver);
 		Util.waitForLoaderToFinish(driver);
@@ -452,7 +452,7 @@ public class Collateral360Helper {
 	public void verifyCollateralTitle() throws InterruptedException {
 		Util.waitForLoaderToFinish(driver);
 		Util.waitForLoaderToFinish(driver);
-	
+
 		Util.waitForElement(driver, collateralTitle, 20);
 		String title = collateralTitle.getText().trim();
 		Assert.assertEquals("Basic Collateral Information", title);
@@ -1014,9 +1014,16 @@ public class Collateral360Helper {
 		Util.waitForLoaderToFinish(driver);
 		Util.waitForAJAX(driver);
 	}
-	
-	public void saveCollateral()
-	{
+
+	public void clickUseCurrentBtn() {
+		Util.waitForAJAX(driver);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", useCurrentCustomer);
+		Util.waitForAJAX(driver);
+		Util.waitForLoaderToFinish(driver);
+	}
+
+	public void saveCollateral() {
 		Util.waitForAJAX(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", saveCollateralDetails);
@@ -1081,8 +1088,11 @@ public class Collateral360Helper {
 		fillingNumber.sendKeys("123456789");
 		Util.waitForElementPresent(driver, By.xpath(facName), 10);
 		option = "Fac for intex";
-		// Util.selectItemFromList(driver, facilityName, option);
-		Util.selectItemFromList(driver, facName, option);
+//		if (driver.findElement(By.xpath(facName)).isDisplayed()) {
+//			Util.selectItemFromList(driver, facName, option);
+//		} else
+		Util.selectItemFromList(driver, facilityName, option);
+
 		comments.clear();
 		comments.sendKeys("NA");
 		saveUCC.click();

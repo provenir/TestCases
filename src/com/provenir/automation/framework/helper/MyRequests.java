@@ -119,6 +119,9 @@ public class MyRequests {
 	@FindBy(how = How.ID, using = "dateto")
 	private WebElement toDate;
 
+	@FindBy(how = How.XPATH, using = "//h2[contains(.,'My Requests')]")
+	private WebElement myReqTitle;
+
 	@FindBy(how = How.XPATH, using = "//span[@class='getcount']")
 	private WebElement reqCount;
 
@@ -160,6 +163,9 @@ public class MyRequests {
 
 	@FindBy(how = How.XPATH, using = "//span[contains(.,'Create Customer')]")
 	private WebElement createCustomer;
+
+	@FindBy(how = How.ID, using = "newBBRequest")
+	private WebElement boaWizard;
 
 	private String dashboardRows = "//*[@id='data_content']/div/table/tbody/tr";
 	private String reqOnDashboard = "//*[@id='data_content']/div/table/tbody/tr[1]";
@@ -300,6 +306,14 @@ public class MyRequests {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", newCreditRequestLink);
 
+		Util.waitForAJAX(driver);
+		return new NewCreditRequest(driver);
+	}
+
+	public NewCreditRequest BOALink() {
+		Util.waitForElement(driver, boaWizard, 15);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", boaWizard);
 		Util.waitForAJAX(driver);
 		return new NewCreditRequest(driver);
 	}
@@ -722,5 +736,18 @@ public class MyRequests {
 		myRequests.click();
 		Util.waitForAJAX(driver);
 		return new LogoutPage(driver);
+	}
+
+	public boolean verifyBOAWizardLinkOnLeftNav() {
+		Util.waitForAJAX(driver);
+		if (boaWizard.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+
+	public String getMyRequestsTitle() {
+		Util.waitForAJAX(driver);
+		return myReqTitle.getText().trim();
 	}
 }

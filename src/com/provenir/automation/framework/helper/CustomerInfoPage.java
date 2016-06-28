@@ -15,7 +15,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.provenir.automation.framework.utility.Util;
 
 public class CustomerInfoPage {
-	
+
 	WebDriver driver;
 
 	public CustomerInfoPage(WebDriver driver) {
@@ -26,10 +26,10 @@ public class CustomerInfoPage {
 	// New Credit Request link from left navigation menu
 	@FindBy(how = How.XPATH, using = "//ul[@id='breadCrumbMainNav_new']/li[@id='cstInfo']")
 	private WebElement customerInfoTitle;
-	
+
 	@FindBy(how = How.XPATH, using = ".//*[@id='breadCrumbMainNav_new']/li[2]/a/span")
 	private WebElement WizardSecondStep;
-	
+
 	@FindBy(how = How.XPATH, using = ".//*[@id='breadCrumbMainNav_new']/li[5]/a/span")
 	private WebElement WizardFourthStep;
 
@@ -45,14 +45,13 @@ public class CustomerInfoPage {
 	@FindBy(how = How.XPATH, using = "//div[@id='partyList']/div[@class='main_content_div']/div[2]/div[2]/a[@id='backBtn']")
 	private WebElement backButton;
 
-	@FindBy(how = How.XPATH, using = "//div[@id='partyList']/div[@class='main_content_div']/div[2]/div[1]/a[@name='addParty']")
+	@FindBy(how = How.XPATH, using = "//*[@id='partyList']/div[3]/div[2]/div[1]/a[@name='addParty']")
 	private WebElement addNewButton;
-	
-//	@FindBy(how = How.XPATH, using = "//div[@id='partyList']/div[@class='main_content_div']/div[2]/div[1]/a[@name='addParty']")
-//	private WebElement NewButton;
 
-	// @FindBy(how = How.XPATH, using = ".//div[@class='error']") Tarun Jain
-	// 20/2/2014
+	// @FindBy(how = How.XPATH, using =
+	// "//div[@id='partyList']/div[@class='main_content_div']/div[2]/div[1]/a[@name='addParty']")
+	// private WebElement NewButton;
+
 	@FindBy(how = How.XPATH, using = "//label[@class='error']")
 	private List<WebElement> errorMsg;
 
@@ -82,20 +81,19 @@ public class CustomerInfoPage {
 
 	@FindBy(how = How.ID, using = "yrEstablished")
 	private WebElement yrEstb;
-	
+
 	@FindBy(how = How.ID, using = "selCustList")
 	private WebElement CustSelectionCheckBox;
-	
+
 	@FindBy(how = How.ID, using = "addPartyList")
 	private WebElement AddCustList;
 
 	@FindBy(how = How.XPATH, using = ".//*[@id='f7ceb66d0e2b40c5ae8c296b9a13c9a9']/table/tbody/tr[3]/td[1]/input")
 	private WebElement CheckBox;
-	
+
 	@FindBy(how = How.ID, using = "delete")
 	private WebElement CustomerDeleteButton;
 
-	
 	@FindBy(how = How.ID, using = "dbaName")
 	private WebElement doingBusiness;
 
@@ -141,6 +139,9 @@ public class CustomerInfoPage {
 
 	@FindBy(how = How.CSS, using = "a[id='savecustdetails']")
 	private WebElement saveButton;
+
+	@FindBy(how = How.ID, using = "addCustAddr")
+	private WebElement addBtn;
 
 	@FindBy(how = How.CSS, using = "a[id='delete']")
 	private WebElement deleteButton;
@@ -326,11 +327,10 @@ public class CustomerInfoPage {
 
 	@FindBy(how = How.ID, using = "custClassificatnCode")
 	private WebElement custClassiCode;
-	
-	
+
 	@FindBy(how = How.XPATH, using = ".//*[@id='0']/td[5]")
 	private WebElement CustGrid;
-		
+
 	@FindBy(how = How.XPATH, using = "//*[@class='main_content_div']/div[@class='sub_content_div']/div[10]/div[1]/label[2]")
 	private WebElement interimReviewDateValue;
 
@@ -420,6 +420,18 @@ public class CustomerInfoPage {
 	@FindBy(how = How.XPATH, using = ".//*[@id='dragbar']/div/a")
 	private WebElement closeBtn;
 
+	@FindBy(how = How.ID, using = "addrLn1")
+	private WebElement addLine1;
+
+	@FindBy(how = How.ID, using = "addrLn2")
+	private WebElement addLine2;
+
+	@FindBy(how = How.ID, using = "city")
+	private WebElement city;
+
+	@FindBy(how = How.ID, using = "postalCd")
+	private WebElement zipcode;
+
 	private String custNameFromGrid = ".//*[@id='data_content']/div[1]/table/tbody/tr";
 	private String loanOfficerFromGrid = ".//div[@id='searchData']/div[1]/div[2]/div[1]/table/tbody/tr";
 	private String language = "langPref";
@@ -451,6 +463,9 @@ public class CustomerInfoPage {
 	private String backToPage = "//div[contains(@class,'breadcrumbGrid')]/ul/li";
 	private String pageName = "My Requests";
 	private String customerType = "custTypeId";
+	private String addressType = "addrTyp0";
+	private String country = "country0";
+	private String state = "state0";
 
 	private WebElement element = null;
 	List<WebElement> lstWebElements = null;
@@ -1390,16 +1405,17 @@ public class CustomerInfoPage {
 		closeSearchPopup.click();
 		return this;
 	}
-	
-	public CustomerInfoPage AddNewButton(){
+
+	public CustomerInfoPage AddNewButton() {
 		addNewButton.click();
 		Util.waitForAJAX(driver);
 		return this;
-		
+
 	}
-	
+
 	public CustomerInfoPage clickAddNewButton() {
-		addNewButton.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", addNewButton);
 		Util.waitForAJAX(driver);
 		return this;
 	}
@@ -1469,26 +1485,45 @@ public class CustomerInfoPage {
 		doingBusiness.sendKeys(businessValue);
 	}
 
-	public void enterCustomerSince(String customerSinceValue) {
-		customerSince.clear();
-		customerSince.sendKeys(customerSinceValue);
+	public void enterCustomerSince() {
+		Util.waitForElement(driver, customerSince, 5);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", customerSince);
+		js.executeScript("arguments[0].value='2013-06-03';", customerSince);
+	}
+
+	public void clickCustInfo() {
+		driver.findElement(
+				By.xpath("//*[@id='addInfoDiv']/div/div[4]/div[1]/div/a"))
+				.click();
+		driver.findElement(By.id("customerInfo")).click();
+	}
+
+	public void clickCustomerInfo() {
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div[1]/div[7]/div[1]/div/a"))
+				.click();
+		driver.findElement(By.id("customerInfo")).click();
 	}
 
 	public void selectCustStatus(String status) {
-		Util.selectItemFromList(driver,custStatus, status);
+		Util.selectItemFromList(driver, custStatus, status);
 	}
 
 	public void selectCustStatusOfIndivid(String status) {
-		Util.selectItemFromList(driver,custStatusOfIndivid, status);
+		Util.selectItemFromList(driver, custStatusOfIndivid, status);
 	}
 
 	public void selectLang(String lang) {
-		Util.selectItemFromList(driver,language, lang);
+		Util.selectItemFromList(driver, language, lang);
 	}
 
-	public void enterDateOfBirth(String dateOfBirthvalue) {
-		dateOfBirth.clear();
-		dateOfBirth.sendKeys(dateOfBirthvalue);
+	public void enterDateOfBirth() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", dateOfBirth);
+		js.executeScript("arguments[0].value='1990-01-15';", dateOfBirth);
+		// dateOfBirth.clear();
+		// dateOfBirth.sendKeys(dateOfBirthvalue);
 	}
 
 	public void enterTaxIdentification(String taxId) {
@@ -1496,24 +1531,37 @@ public class CustomerInfoPage {
 		taxIdentification.sendKeys(taxId);
 	}
 
-	public void selectStateOfIncorp(String state) {
-		Util.selectItemFromList(driver,stateOfIncorp, state);
+	public void enterTaxID() {
+		taxIdentification.clear();
+		taxIdentification.sendKeys("123456789");
 	}
 
-	public void selectCorporateStructure(String corpStruct) {
-		Util.enableAllDropdowns(driver);
+	public void selectStateOfIncorp(String state) {
+		Util.selectItemFromList(driver, stateOfIncorp, state);
+	}
+
+	public void selectCorporateStructure() throws InterruptedException {
 		Util.waitForAJAX(driver);
-		Util.selectItemFromList(driver,corporateStr, corpStruct);
+		driver.findElement(
+				By.xpath("//*[@id='addInfoDiv']/div/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='addInfoDiv']/div/div[1]/span/input"))
+				.sendKeys("Corporation");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//*[contains(@id,'ui-id-') and (@class='ui-corner-all')]"))
+				.click();
 	}
 
 	public void selectDivision(String dvsn) {
 		Util.waitForAJAX(driver);
-		Util.selectItemFromList(driver,division, dvsn);
+		Util.selectItemFromList(driver, division, dvsn);
 	}
 
 	public void selectRegion(String regn) {
 		Util.waitForAJAX(driver);
-		Util.selectItemFromList(driver,region, regn);
+		Util.selectItemFromList(driver, region, regn);
 	}
 
 	public void enterGARAsOfDate(String GARDate) {
@@ -1554,27 +1602,27 @@ public class CustomerInfoPage {
 	}
 
 	public void selectNAICSCode(String NAICSCodeValue) {
-		Util.selectItemFromList(driver,NAICSCode, NAICSCodeValue);
+		Util.selectItemFromList(driver, NAICSCode, NAICSCodeValue);
 	}
 
 	public void selectSICCode(String SICCodeValue) {
-		Util.selectItemFromList(driver,SICCode, SICCodeValue);
+		Util.selectItemFromList(driver, SICCode, SICCodeValue);
 	}
 
 	public void selectLegalCode(String legalCodevalue) {
-		Util.selectItemFromList(driver,legalCode, legalCodevalue);
+		Util.selectItemFromList(driver, legalCode, legalCodevalue);
 	}
 
 	public void selectBranch(String branchNm) {
-		Util.selectItemFromList(driver,branch, branchNm);
+		Util.selectItemFromList(driver, branch, branchNm);
 	}
 
 	public void selectIndustry(String industry) {
-		Util.selectItemFromList(driver,industryRisk, industry);
+		Util.selectItemFromList(driver, industryRisk, industry);
 	}
 
 	public void selectEnvironment(String envment) {
-		Util.selectItemFromList(driver,environmentalRating, envment);
+		Util.selectItemFromList(driver, environmentalRating, envment);
 	}
 
 	public void enterWebsite(String webst) {
@@ -1583,7 +1631,7 @@ public class CustomerInfoPage {
 	}
 
 	public void selectExpenseCode(String expenseCodeValue) {
-		Util.selectItemFromList(driver,expenseCode, expenseCodeValue);
+		Util.selectItemFromList(driver, expenseCode, expenseCodeValue);
 	}
 
 	public void selectOFACCheckBox() {
@@ -1610,7 +1658,7 @@ public class CustomerInfoPage {
 	public void selectDepartment(String departmentNm) {
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		jse.executeScript("document.getElementById('department').focus();");
-		Util.selectItemFromList(driver,department, departmentNm);
+		Util.selectItemFromList(driver, department, departmentNm);
 	}
 
 	public void enterDUNSNumber(String DUNSNum) {
@@ -1620,28 +1668,43 @@ public class CustomerInfoPage {
 
 	public void selectCustomerClassiCode(String custClassiCode) {
 		Util.enableAllDropdowns(driver);
-		Util.selectItemFromList(driver,customerClassiCode, custClassiCode);
+		Util.selectItemFromList(driver, customerClassiCode, custClassiCode);
 		Util.waitForAJAX(driver);
 	}
 
 	public void selectSaluation(String saluationValue) {
-		Util.selectItemFromList(driver,saluation, saluationValue);
+		Util.selectItemFromList(driver, saluation, saluationValue);
 	}
 
-	public void selectGender(String genderValue) {
-		Util.selectItemFromList(driver,gender, genderValue);
+	public void selectGender() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(gender), 10);
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div[1]/div[4]/div[2]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div[1]/div[4]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div[1]/div[4]/div[2]/span/input"))
+				.sendKeys("Female");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'Female')]")).click();
 	}
 
 	public void selectMaritalStatus(String maritalStatusValue) {
-		Util.selectItemFromList(driver,maritalStatus, maritalStatusValue);
+		Util.selectItemFromList(driver, maritalStatus, maritalStatusValue);
 	}
 
-	public void enterMiddleName(String midName) {
-		middleName.sendKeys(midName);
+	public void enterMiddleName() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", middleName);
+		js.executeScript("arguments[0].value='On';", middleName);
+		// middleName.clear();
+		// middleName.sendKeys(midName);
 	}
 
 	public void selectSuffix(String suffixValue) {
-		Util.selectItemFromList(driver,suffix, suffixValue);
+		Util.selectItemFromList(driver, suffix, suffixValue);
 	}
 
 	public void enterAnnPersInc(String persInc) {
@@ -1649,16 +1712,24 @@ public class CustomerInfoPage {
 	}
 
 	public void selectOccupation(String occupationValue) {
-		Util.selectItemFromList(driver,occupation, occupationValue);
+		Util.selectItemFromList(driver, occupation, occupationValue);
 	}
 
 	public CustomerInfoPage clickSaveButton() {
 		Util.enableAllDropdowns(driver);
 		Util.waitForAJAX(driver);
-		Util.waitForElement(driver,saveButton, 20);
-		saveButton.click();
+		Util.waitForElement(driver, saveButton, 20);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", saveButton);
 		Util.waitForAJAX(driver);
 		return this;
+	}
+
+	public void clickAddBtnOFAddressOnCustInfo() {
+		Util.waitForElement(driver, addBtn, 10);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", addBtn);
+		Util.waitForAJAX(driver);
 	}
 
 	public boolean getCustNameFromGrid(String custName) {
@@ -1734,7 +1805,9 @@ public class CustomerInfoPage {
 			element = driver.findElement(By.xpath(custNameFromGrid + "[" + i
 					+ "]/td[3]"));
 			if (element.getText().toLowerCase().equals(custName.toLowerCase())) {
-				element.click();
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+				js.executeScript("arguments[0].click();", element);
+				// element.click();
 			}
 		}
 	}
@@ -1756,13 +1829,13 @@ public class CustomerInfoPage {
 
 	public String getCompanyName() {
 		Util.waitForAJAX(driver);
-		Util.waitForElement(driver,companyLegalName, 60);
+		Util.waitForElement(driver, companyLegalName, 60);
 		return companyLegalName.getText();
 	}
 
 	public String getfirstName() {
 		Util.waitForAJAX(driver);
-		Util.waitForElement(driver,firstName, 60);
+		Util.waitForElement(driver, firstName, 60);
 		return firstName.getText();
 	}
 
@@ -1837,11 +1910,11 @@ public class CustomerInfoPage {
 	public String getcustclassiCode() {
 		return custClassiCode.getText();
 	}
-	
+
 	public String getcustname() {
 		return CustGrid.getText();
 	}
-	
+
 	public String getBranch() {
 		return branchValue.getText();
 	}
@@ -2037,7 +2110,7 @@ public class CustomerInfoPage {
 	}
 
 	public void enterCustFirstNameForSearch(String custName) {
-		Util.waitForElement(driver,searchByFirstName, 10);
+		Util.waitForElement(driver, searchByFirstName, 10);
 		searchByFirstName.sendKeys(custName);
 	}
 
@@ -2046,28 +2119,28 @@ public class CustomerInfoPage {
 	}
 
 	public void selectCustFromGrid() {
-		Util.waitForElement(driver,addToCustListBtn, 20);
+		Util.waitForElement(driver, addToCustListBtn, 20);
 		if (!searchedCustOnGrid.getText().contains("No Data Available")) {
 			searchedCustOnGrid.click();
 		}
 	}
 
 	public void clickAddToCustListBtn() {
-		Util.waitForElement(driver,addToCustListBtn, 20);
+		Util.waitForElement(driver, addToCustListBtn, 20);
 		addToCustListBtn.click();
 		Util.waitForAJAX(driver);
 	}
 
 	public void clickAddToCustomerList() {
-		Util.waitForElementPresent(driver,By.xpath(".//*[@id='addPartyList']/span"),
-				40);
+		Util.waitForElementPresent(driver,
+				By.xpath(".//*[@id='addPartyList']/span"), 40);
 		// Util.waitForElement(addToCustList, 20);
 		addToCustList.click();
 		Util.waitForAJAX(driver);
 	}
 
 	public CustomerInfoPage clickLoadBtn() {
-		Util.waitForElement(driver,loadBtn, 60);
+		Util.waitForElement(driver, loadBtn, 60);
 		loadBtn.click();
 		return this;
 	}
@@ -2075,9 +2148,9 @@ public class CustomerInfoPage {
 	public void clickCustTypeAsIndividual(String value) {
 		Util.waitForAJAX(driver);
 		Util.enableAllDropdowns(driver);
-		Util.waitForElementPresent(driver,By.xpath(customerType), 20);
+		Util.waitForElementPresent(driver, By.xpath(customerType), 20);
 		Util.scrollDown(driver);
-		Util.selectItemFromList(driver,customerType, value);
+		Util.selectItemFromList(driver, customerType, value);
 		Util.waitForAJAX(driver);
 	}
 
@@ -2085,8 +2158,10 @@ public class CustomerInfoPage {
 		custFirstName.sendKeys(firstNm);
 	}
 
-	public void enterCustLastName(String lastNm) {
-		custLastName.sendKeys(lastNm);
+	public void enterCustLastName() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", custLastName);
+		js.executeScript("arguments[0].value='Test';", custLastName);
 	}
 
 	public NewCreditRequest clickBackBtn() {
@@ -2119,8 +2194,11 @@ public class CustomerInfoPage {
 
 	public CollateralInfoPage clickNextBtn() {
 		Util.waitForAJAX(driver);
-		Util.waitForElementPresent(driver,By.xpath(".//*[@id='nextBtn']/span"), 40);
-		nextBtn.click();
+		Util.waitForElementPresent(driver,
+				By.xpath(".//*[@id='nextBtn']/span"), 40);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", nextBtn);
+
 		Util.waitForAJAX(driver);
 		Util.waitForAJAX(driver);
 		Util.waitForLoaderToFinish(driver);
@@ -2246,14 +2324,14 @@ public class CustomerInfoPage {
 		searchRegion.clear();
 		searchNAICS.clear();
 		Util.enableAllDropdowns(driver);
-		Util.selectItemFromList(driver,"advSrchIp8", NAICS);
+		Util.selectItemFromList(driver, "advSrchIp8", NAICS);
 		clickSearchSubmitBtn();
 		Util.waitForAJAX(driver);
 		return getSearchedCustFrmGrid(12, NAICS);
 	}
 
 	public boolean searchCustByFirstNameEquals(String fName) {
-		Util.selectItemFromList(driver,firstNameField, option);
+		Util.selectItemFromList(driver, firstNameField, option);
 		searchNAICS.clear();
 		searchFirstName.clear();
 		searchFirstName.sendKeys(fName);
@@ -2264,7 +2342,7 @@ public class CustomerInfoPage {
 
 	public boolean searchCustByLastNameEquals(String lName) {
 		searchFirstName.clear();
-		Util.selectItemFromList(driver,lastNameField, option);
+		Util.selectItemFromList(driver, lastNameField, option);
 		searchLastName.clear();
 		searchLastName.sendKeys(lName);
 		clickSearchSubmitBtn();
@@ -2275,7 +2353,7 @@ public class CustomerInfoPage {
 	public boolean searchCustByLegalNameEquals(String legalName) {
 		searchFirstName.clear();
 		searchLastName.clear();
-		Util.selectItemFromList(driver,legalNameField, option);
+		Util.selectItemFromList(driver, legalNameField, option);
 		searchLegalName.clear();
 		searchLegalName.sendKeys(legalName);
 		clickSearchSubmitBtn();
@@ -2287,7 +2365,7 @@ public class CustomerInfoPage {
 		searchFirstName.clear();
 		searchLastName.clear();
 		searchLegalName.clear();
-		Util.selectItemFromList(driver,shrtNameField, option);
+		Util.selectItemFromList(driver, shrtNameField, option);
 		searchCustShrtName.clear();
 		searchCustShrtName.sendKeys(shrtName);
 		clickSearchSubmitBtn();
@@ -2300,7 +2378,7 @@ public class CustomerInfoPage {
 		searchLastName.clear();
 		searchLegalName.clear();
 		searchCustShrtName.clear();
-		Util.selectItemFromList(driver,addressLineField, option);
+		Util.selectItemFromList(driver, addressLineField, option);
 		searchAddressLine.clear();
 		searchAddressLine.sendKeys(addressLine);
 		clickSearchSubmitBtn();
@@ -2314,7 +2392,7 @@ public class CustomerInfoPage {
 		searchLegalName.clear();
 		searchCustShrtName.clear();
 		searchAddressLine.clear();
-		Util.selectItemFromList(driver,cityField, option);
+		Util.selectItemFromList(driver, cityField, option);
 		searchCity.clear();
 		searchCity.sendKeys(city);
 		clickSearchSubmitBtn();
@@ -2329,7 +2407,7 @@ public class CustomerInfoPage {
 		searchCustShrtName.clear();
 		searchAddressLine.clear();
 		searchCity.clear();
-		Util.selectItemFromList(driver,postalField, option);
+		Util.selectItemFromList(driver, postalField, option);
 		searchPostalCode.clear();
 		int pCode = Integer.parseInt(postalCode);
 		searchPostalCode.sendKeys("" + pCode);
@@ -2346,7 +2424,7 @@ public class CustomerInfoPage {
 		searchAddressLine.clear();
 		searchCity.clear();
 		searchPostalCode.clear();
-		Util.selectItemFromList(driver,regionField, option);
+		Util.selectItemFromList(driver, regionField, option);
 		searchRegion.clear();
 		searchRegion.sendKeys(region);
 		clickSearchSubmitBtn();
@@ -2553,28 +2631,27 @@ public class CustomerInfoPage {
 
 	public void clickMatchPopup() {
 		Util.waitForAJAX(driver);
-		Util.waitForElement(driver,custPopUp, 30);
+		Util.waitForElement(driver, custPopUp, 30);
 		driver.findElement(By.xpath(".//*[@id='useCurrentCust']/span/span"))
 				.click();
 		Util.waitForAJAX(driver);
 	}
 
-	public void selectedCustId(){
+	public void selectedCustId() {
 		Util.waitForAJAX(driver);
 		driver.findElement(By.name("selectedCustId")).click();
 	}
-	
-	
+
 	public CustomerInfoPage createCustLink() {
 		Util.waitForAJAX(driver);
-		Util.waitForElement(driver,createCustLink, 5);
+		Util.waitForElement(driver, createCustLink, 5);
 		createCustLink.click();
 		Util.waitForAJAX(driver);
 		return this;
 	}
 
 	public String customerSummaryPgTitle() {
-		Util.waitForElement(driver,customerSummaryTitle, 5);
+		Util.waitForElement(driver, customerSummaryTitle, 5);
 		return customerSummaryTitle.getText();
 	}
 
@@ -2585,7 +2662,7 @@ public class CustomerInfoPage {
 		if (result == true) {
 			useCurntbtn.click();
 		}
-		Util.waitForElement(driver,addedCustName, 30);
+		Util.waitForElement(driver, addedCustName, 30);
 		return addedCustName.getText();
 	}
 
@@ -2607,67 +2684,163 @@ public class CustomerInfoPage {
 	}
 
 	public void clickEmployeeAsYes() {
-		Util.waitForElement(driver,empAsYes, 20);
+		Util.waitForElement(driver, empAsYes, 20);
 		empAsYes.click();
 		Util.waitForAJAX(driver);
 	}
 
 	public void clickCustText() {
-		Util.waitForElement(driver,custText, 15);
+		Util.waitForElement(driver, custText, 15);
 		custText.click();
 	}
 
 	public void clickBorrowerText() {
-		Util.waitForElement(driver,borrowerDetailText, 20);
+		Util.waitForElement(driver, borrowerDetailText, 20);
 		borrowerDetailText.click();
 	}
 
 	public void clickIndvCustOnGrid() {
-		Util.waitForElement(driver,indvCustClick, 30);
+		Util.waitForElement(driver, indvCustClick, 30);
 		indvCustClick.click();
 		Util.waitForAJAX(driver);
 	}
 
 	public void clickCloseOnCustPopup() {
-		Util.waitForElement(driver,popupCust, 30);
+		Util.waitForElement(driver, popupCust, 30);
 		popupCust.click();
-		Util.waitForElementPresent(driver,By.xpath(".//*[@id='dragbar']/div/a"), 20);
+		Util.waitForElementPresent(driver,
+				By.xpath(".//*[@id='dragbar']/div/a"), 20);
 		poupCloseBtn.click();
 		Util.waitForAJAX(driver);
 	}
-	
-	public void SecondStep(){
-		
-		Util.waitForElement(driver,WizardSecondStep, 30);
+
+	public void SecondStep() {
+
+		Util.waitForElement(driver, WizardSecondStep, 30);
 		WizardSecondStep.click();
 		Util.waitForAJAX(driver);
 	}
-	 public void CustSelectionCheckBox(){
-		 Util.waitForElement(driver,CustSelectionCheckBox, 30);
-		 CustSelectionCheckBox.click();
-		 Util.waitForAJAX(driver);
-	 }
-		 public void AddCustList(){
-		 Util.waitForElement(driver,AddCustList, 30);
-		 AddCustList.click();
-		 Util.waitForAJAX(driver);
-	 }
-		 public void ClickCheckBoxAndDeleteCustomer(){
-			 Util.waitForElement(driver,CheckBox, 30);
-			 CheckBox.click();
-			 Util.waitForAJAX(driver);
-			 
-			 Util.waitForElement(driver,CustomerDeleteButton, 30);
-			 CustomerDeleteButton.click();
-			 Util.waitForAJAX(driver);
-		 }
-		 
-		 public TransactionInfoPage FourthStep(){
-				
-				Util.waitForElement(driver,WizardFourthStep, 30);
-				WizardFourthStep.click();
-				Util.waitForAJAX(driver);
-				return new TransactionInfoPage(driver);
-		 }
+
+	public void CustSelectionCheckBox() {
+		Util.waitForElement(driver, CustSelectionCheckBox, 30);
+		CustSelectionCheckBox.click();
+		Util.waitForAJAX(driver);
+	}
+
+	public void AddCustList() {
+		Util.waitForElement(driver, AddCustList, 30);
+		AddCustList.click();
+		Util.waitForAJAX(driver);
+	}
+
+	public void ClickCheckBoxAndDeleteCustomer() {
+		Util.waitForElement(driver, CheckBox, 30);
+		CheckBox.click();
+		Util.waitForAJAX(driver);
+
+		Util.waitForElement(driver, CustomerDeleteButton, 30);
+		CustomerDeleteButton.click();
+		Util.waitForAJAX(driver);
+	}
+
+	public TransactionInfoPage FourthStep() {
+		Util.waitForElement(driver, WizardFourthStep, 30);
+		WizardFourthStep.click();
+		Util.waitForAJAX(driver);
+		return new TransactionInfoPage(driver);
+	}
+
+	public void selAddType() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(addressType), 10);
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[1]/span/input"))
+				.sendKeys("Mailing");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'Mailing')]")).click();
+	}
+
+	public void selCountry() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(country), 5);
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[2]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[2]/span/input"))
+				.sendKeys("United States");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'United States')]"))
+				.click();
+	}
+
+	public void selCustTyp() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(customerType), 10);
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.sendKeys("Individual");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'Individual')]")).click();
+	}
+
+	public void selCustType() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(customerType), 10);
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div/div[2]/div[1]/span/input"))
+				.sendKeys("Business");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a/strong[contains(.,'Business')]"))
+				.click();
+	}
+
+	public void enterAddressLine1() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", addLine1);
+		js.executeScript("arguments[0].value='300 Interpace Parkway';",
+				addLine1);
+	}
+
+	public void enterAddressLine2() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", addLine2);
+		js.executeScript("arguments[0].value='Building A';", addLine2);
+	}
+
+	public void enterCity() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", city);
+		js.executeScript("arguments[0].value='Parsippany';", city);
+	}
+
+	public void enterZipCode() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", zipcode);
+		js.executeScript("arguments[0].value='07054';", zipcode);
+	}
+
+	public void selState() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(state), 5);
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[5]/div/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='custAddress']/div/table/tbody/tr/td[5]/div/span/input"))
+				.sendKeys("New Jersey");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'New Jersey')]")).click();
+	}
 
 }

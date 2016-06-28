@@ -2,30 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="1" name="Failed suite [Automation test suite]" parallel="tests">
   <parameter name="environment" value="src/com/provenir/automation/framework/config/Env.properties"/>
-  <parameter name="browser" value="InternetExplorer"/>
-  <test name="IE Test(failed)" parallel="tests">
-    <parameter name="browser" value="InternetExplorer"/>
+  <parameter name="browser" value="Firefox"/>
+  <test name="Firefox Test(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.provenir.automation.framework.testcases.RuleBasedSecurity">
+      <class name="com.provenir.automation.framework.testcases.Collateral360">
         <methods>
-          <include name="test11_verifySecurityforOtherUser"/>
-          <include name="test5_loginWithOtherUser"/>
-          <include name="test1_clickSecuritySettings"/>
-          <include name="test8_selectRuleFromDEAndSave"/>
-          <include name="landingPage"/>
-          <include name="test3_selectAnyRuleFromDEAndSave"/>
-          <include name="beforeTest"/>
           <include name="beforeMethod"/>
+          <include name="test22_cancelUCCDetails"/>
+          <include name="test21_updateUCC"/>
+          <include name="test20_saveUCC"/>
+          <include name="beforeTest"/>
           <include name="tearDown"/>
-          <include name="test2_enterEditPermission"/>
           <include name="initialize"/>
-          <include name="test10_searchReq"/>
-          <include name="test7_enterPermission"/>
-          <include name="test9_loginWithOtherUser"/>
-          <include name="test4_verifySecurityWithOtherUser"/>
-          <include name="test6_goToSecuritySettingsAndSelectGroup"/>
         </methods>
-      </class> <!-- com.provenir.automation.framework.testcases.RuleBasedSecurity -->
+      </class> <!-- com.provenir.automation.framework.testcases.Collateral360 -->
     </classes>
-  </test> <!-- IE Test(failed) -->
+  </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [Automation test suite] -->

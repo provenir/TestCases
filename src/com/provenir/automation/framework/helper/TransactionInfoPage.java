@@ -106,6 +106,18 @@ public class TransactionInfoPage {
 	@FindBy(how = How.XPATH, using = ".//*[@id='dragbar']/div[2]/a")
 	private WebElement crossOnPopup;
 
+	@FindBy(how = How.ID, using = "crdPropAmt")
+	private WebElement proposedAmt;
+
+	@FindBy(how = How.ID, using = "addNewTrnsBorr")
+	private WebElement addBtnOfFacBorrower;
+
+	@FindBy(how = How.ID, using = "borrList")
+	private WebElement borrowerName;
+
+	@FindBy(how = How.ID, using = "amountRequested")
+	private WebElement amtRequested;
+
 	private String lstProdCata = ".//div[@id='prodCatalogContentDiv']/div[2]/table/tbody/tr";
 
 	private String facilityBorrowerList = "//*[@id='borrSelect']/div/table/tbody/tr";
@@ -147,25 +159,47 @@ public class TransactionInfoPage {
 		return transactionInfoTitle.getText();
 	}
 
-	public void enterFacilityName(String facilityNm) {
-		facilityName.clear();
-		facilityName.sendKeys(facilityNm);
+	public void enterFacilityName() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", facilityName);
+		js.executeScript("arguments[0].value='Test Facility';", facilityName);
 	}
 
-	public void selectFacilityType(String type) {
+	public void selectFacilityType() throws InterruptedException {
 		Util.enableAllDropdowns(driver);
-		Util.selectItemFromList(driver, facilityType, type);
+		driver.findElement(
+				By.xpath("//*[@id='BBUPSERTCREDLNSUMMFORM']/div[3]/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='BBUPSERTCREDLNSUMMFORM']/div[3]/div[1]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBUPSERTCREDLNSUMMFORM']/div[3]/div[1]/span/input"))
+				.sendKeys("Term Loan");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//strong[contains(.,'Term Loan')]"))
+				.click();
+	}
+
+	public void enterProposedAmount() {
+		Util.waitForElement(driver, proposedAmt, 5);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].value='';", proposedAmt);
+		js.executeScript("arguments[0].value='500000000';", proposedAmt);
 	}
 
 	public TransactionInfoPage clickSaveButton() throws InterruptedException {
-		saveButton.click();
-		Thread.sleep(5000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", saveButton);
 		Util.waitForAJAX(driver);
+		Thread.sleep(3000);
 		return this;
 	}
 
 	public void clickAddNewButton() {
-		addNewButton.click();
+		Util.waitForAJAX(driver);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", addNewButton);
 		Util.waitForAJAX(driver);
 	}
 
@@ -622,4 +656,80 @@ public class TransactionInfoPage {
 
 	}
 
+	public void clickAddBtnOfFacilityBorrowr() {
+		Util.waitForElement(driver, addBtnOfFacBorrower, 10);
+		addBtnOfFacBorrower.click();
+	}
+
+	public void selectBorrowerName(String option) {
+		Util.selectItemFromList(driver, borrowerName, option);
+	}
+
+	public void selBorrowerOnTransactionInformation()
+			throws InterruptedException {
+		driver.findElement(
+				By.xpath("//*[@id='borrSelect']/div/table/tbody/tr/td[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='borrSelect']/div/table/tbody/tr/td[1]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='borrSelect']/div/table/tbody/tr/td[1]/span/input"))
+				.sendKeys("Test FMC");
+		Thread.sleep(2000);
+
+		driver.findElement(By.xpath("//strong[starts-with(.,'Test FMC')]"))
+				.click();
+		Util.waitForAJAX(driver);
+	}
+
+	public void selRelationshipTyp() throws InterruptedException {
+
+		Util.waitForElementPresent(
+				driver,
+				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"),
+				10);
+		driver.findElement(
+				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"))
+				.click();
+		Thread.sleep(1000);
+		driver.findElement(
+				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"))
+				.sendKeys("Borrower");
+		Thread.sleep(2000);
+		List<WebElement> lst = driver.findElements(By
+				.xpath("//strong[contains(.,'Borrower')]"));
+		lst.get(0).click();
+		Util.waitForAJAX(driver);
+	}
+
+	public void clickPrimaryChkbox() {
+		WebElement e = driver
+				.findElement(By
+						.xpath("//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[5]/input[@name='primFlag0']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", e);
+		Util.waitForAJAX(driver);
+	}
+
+	public String verifyAmountRequestedValue() {
+		Util.waitForAJAX(driver);
+		return amtRequested.getText();
+		
+//		if (amtRequested.getText().trim().equalsIgnoreCase("500000000"))
+//			return true;
+//		else
+//			return false;
+	}
+
+	public AdditionalInformation clickNextBtn() {
+		Util.waitForElement(driver, nextButton, 10);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", nextButton);
+		Util.waitForAJAX(driver);
+		return new AdditionalInformation(driver);
+	}
 }

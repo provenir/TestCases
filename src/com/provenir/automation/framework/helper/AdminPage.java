@@ -318,7 +318,7 @@ public class AdminPage {
 		Util.waitForAJAX(driver);
 		Util.enableAllDropdowns(driver);
 		driver.findElement(By.xpath(".//*[@id='roleSec']/div[2]/span/input"))
-				.sendKeys("Rule Security 2");
+				.sendKeys("Provenir Admin");
 		Util.waitForElementPresent(
 				driver,
 				By.xpath("//*[contains(@id,'ui-id-') and (@class='ui-corner-all')]"),

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><testdata>
+	<newCreditReqWizard>
+		<newCreditRequest>
+			<creditName>Credit555</creditName>
+			<lendingProcess>New Request for Money</lendingProcess>
+		</newCreditRequest>
+
+		<customerInformation>
+			<customerSince>2013-06-03</customerSince>
+			<taxIdentification>TaxID 1010</taxIdentification>
+			<corporateStructure>Corporation</corporateStructure>
+			<GARAsOfDate>2013-06-03</GARAsOfDate>
+			<annualReviewDate>2013-06-03</annualReviewDate>
+			<lastTaxReturnDate>
+			<lastTaxReturnDateValue1>2013-02-03</lastTaxReturnDateValue1>
+			<lastTaxReturnDateValue2>2013-05-11</lastTaxReturnDateValue2>
+			</lastTaxReturnDate>
+			<interimReviewDate>2013-06-03</interimReviewDate>
+			<fiscalYearEndDate>16</fiscalYearEndDate>
+			<NAICSCode>111160-Rice Farming</NAICSCode>
+			<SICCode>101100-Iron ores</SICCode>
+			<stateOfIncorp>Alaska</stateOfIncorp>
+			<division>Private</division>
+			<region>Western Canada</region>
+			<customerBranch>Chicago</customerBranch>
+			<expenseCode>001-Main Cost Center</expenseCode>
+			<department>Mid Market</department>
+			<gar>GAR</gar>
+			<numOfSigner>100</numOfSigner>
+			<industry>AAA</industry>
+			<environment>AAA</environment>
+			<website>website</website>
+			<stockExchange>stockExchange</stockExchange>
+			<customerClassiCode>222-Medium Business</customerClassiCode>
+			<dateOfBirth>1990-01-15</dateOfBirth>
+			<DUNSNumber>1234</DUNSNumber>
+			<legalCode>444-Legal Issues</legalCode>
+			<addressDetails>
+				<addressType>Mailing</addressType>
+				<country>United States</country>
+				<addressLine1>300 Interpace Parkway </addressLine1>
+				<addressLine2>Building A</addressLine2>
+				<state>New Jersey</state>
+				<city>Parsippany</city>
+				<zipCode>07054</zipCode>
+			</addressDetails>
+			
+			<customerType>Individual</customerType>
+			<customerType1>Business</customerType1>
+			<asBusiness>
+				<companyName>Test FMC 371</companyName>
+				<companyShortName>FMC</companyShortName>
+				<fullEmpl>5000</fullEmpl>
+				<partEmpl>2000</partEmpl>
+				<yrEstb>1995-08-15</yrEstb>
+				<doingBusiness>IT</doingBusiness>
+				<custStatus>Active</custStatus>
+				<langPrefer>English</langPrefer>
+			</asBusiness>
+			<asIndividual>
+				<saluation>Mrs.</saluation>
+				<gender>Female</gender>
+				<firstName>Customer I2966</firstName>
+				<maritalStatus>Single</maritalStatus>
+				<suffix>Jr.</suffix>
+				<midName>On</midName>
+				<lastName>Test</lastName>
+				<lastTaxReturn>2013-03-30</lastTaxReturn>
+				<annInc>200.00</annInc>
+				<occupation>Account Collector</occupation>
+			</asIndividual>
+			<loanOfficer>Frank</loanOfficer>
+			<forSearch>
+				<firstName>testfirstname</firstName>
+				<lastName>Test</lastName>
+				<legalName>pepsiCo</legalName>
+				<custShortName>automation test</custShortName>
+				<city>New York</city>
+				<addressLine1>test</addressLine1>
+				<postalCode>54564</postalCode>
+				<region>NY</region>
+				<NAICSCode>111160-Rice Farming</NAICSCode>
+				<maxExposure>10000</maxExposure>
+			</forSearch>
+			<addCustomer>
+			<legalName>Nokia</legalName>
+			<legalName1>Micromax</legalName1>
+			<groupName>TestCustGroup</groupName>
+			<custName1>Nokia21 Corp.</custName1>
+			<custName2>NokiaLumia</custName2>
+			</addCustomer>
+		</customerInformation>
+
+		<collateralInformation>
+			<collateralAccName>Coll922</collateralAccName>
+			<collCode>colll</collCode>
+			<currency>USD</currency>
+			<collateralType>Deposits</collateralType>
+			<collateralSubType>Deposit Account, External</collateralSubType>
+			<whereUtilized>Collateral Pool</whereUtilized>
+			<poolCollPercRequired>2.5</poolCollPercRequired>
+			<city>Chicago</city>
+			<country>Canada</country>
+			<number>111111</number>
+			<newlyBuilt>No</newlyBuilt>
+			<addFromSearch>
+			<collateralName>SUV</collateralName>
+			<customerName>automation test</customerName>
+			<ownerPercentage>50</ownerPercentage>
+			<businessLine>MFL</businessLine>
+			<market>San Francisco</market>
+			<rent>50</rent>
+			<units>10</units>
+			<buildings>5</buildings>
+			</addFromSearch>
+		</collateralInformation>
+
+		<transactionInformation>
+			<facilityName>TestFacility</facilityName>
+			<facilityType>Term Loan</facilityType>
+		<relationshipType>Borrower</relationshipType>
+		<proposedAmount>500000000</proposedAmount>
+		<closedAmt>0</closedAmt>
+		<facWflow>Test_facility</facWflow>
+		<otherRelationshipType>Guarantor</otherRelationshipType>
+		<!--	<relationshipType>Co-Borrower</relationshipType>-->
+
+
+			<externalId>1</externalId>
+
+			<!--<editRelationshipType>Guarantor</editRelationshipType>-->
+			<editRelationshipType>Borrower</editRelationshipType>
+			<index>LIBOR</index>
+			<currency>USD</currency>
+			<productType>Line of Credit</productType>
+		</transactionInformation>
+
+		<userTeamInformation>
+			<!--<role>Loan Officer</role>-->
+			<role>Compliance</role>
+			<!--<teamMemberName>Jerry</teamMemberName>-->
+			<teamMemberName>Stephen</teamMemberName>
+			</userTeamInformation>
+			
+			<additionalInfo>
+				<primaryChkingAcc></primaryChkingAcc>
+				<emp>500</emp>
+				<avgBalance>10000</avgBalance>
+			</additionalInfo>
+	</newCreditReqWizard>
+	</testdata>

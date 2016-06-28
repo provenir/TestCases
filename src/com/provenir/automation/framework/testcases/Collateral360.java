@@ -224,7 +224,6 @@ public class Collateral360 extends TestCaseExecutor {
 		Thread.sleep(2000);
 //		collateral360Helper.clickEditAndAddOnUCC();
 //		collateral360Helper.verifyActionMenuOnUCC();
-
 	}
 
 	@Test(priority = 18)
@@ -235,17 +234,17 @@ public class Collateral360 extends TestCaseExecutor {
 
 	@Test(priority = 19)
 	public void test20_saveUCC() {
-		collateral360Helper.saveUCC(option);
+//		collateral360Helper.saveUCC(option);
 	}
 
 	@Test(priority = 20)
 	public void test21_updateUCC() {
-		collateral360Helper.updateUCC(option);
+//		collateral360Helper.updateUCC(option);
 	}
 
 	@Test(priority = 21)
 	public void test22_cancelUCCDetails() throws InterruptedException {
-		collateral360Helper.clickEditAndAddOnUCC();
+//		collateral360Helper.clickEditAndAddOnUCC();
 		collateral360Helper.cancelUCC(option);
 		Thread.sleep(3000);
 		collateral360Helper.clickOnUCC();

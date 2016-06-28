@@ -26,5 +26,9 @@
     "autouser2": {
         "username": "autouser2",
         "password": "Provenir1"
+    },
+    "provadmin": {
+    	"username": "provadmin",
+    	"password": "Provenir1"
     }
 }
