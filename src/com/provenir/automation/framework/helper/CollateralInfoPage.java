@@ -488,6 +488,23 @@ public class CollateralInfoPage {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//strong[contains(.,'Shares')]")).click();
 	}
+	
+	public void selectCollTypeAsRE() throws InterruptedException {
+		Util.enableAllDropdowns(driver);
+		Util.waitForElementPresent(driver, By.xpath(collateralTypeField), 10);
+		driver.findElement(
+				By.xpath("//*[@id='UPSERTCOLLTERALPOOLFORM']/div[1]/div[2]/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath("//*[@id='UPSERTCOLLTERALPOOLFORM']/div[1]/div[2]/div[1]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='UPSERTCOLLTERALPOOLFORM']/div[1]/div[2]/div[1]/span/input"))
+				.sendKeys("Real Estate");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(.,'Real Estate')]")).click();
+	}
+
 
 	public void selectCollSubType() throws InterruptedException {
 		Util.waitForElementPresent(driver, By.xpath(collSubType), 10);
@@ -499,6 +516,19 @@ public class CollateralInfoPage {
 				.sendKeys("Corporate Bonds");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//strong[contains(.,'Corporate')]"))
+				.click();
+	}
+	
+	public void selectCollSubTypeAsRetailOffice() throws InterruptedException {
+		Util.waitForElementPresent(driver, By.xpath(collSubType), 10);
+		driver.findElement(By.xpath("//*[@id='collSubTyp']/span/input"))
+				.click();
+		driver.findElement(By.xpath("//*[@id='collSubTyp']/span/input"))
+				.clear();
+		driver.findElement(By.xpath("//*[@id='collSubTyp']/span/input"))
+				.sendKeys("Retail Office");
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//strong[contains(.,'Retail Office')]"))
 				.click();
 	}
 

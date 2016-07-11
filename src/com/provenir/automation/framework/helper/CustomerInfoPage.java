@@ -88,6 +88,9 @@ public class CustomerInfoPage {
 	@FindBy(how = How.ID, using = "addPartyList")
 	private WebElement AddCustList;
 
+	@FindBy(how = How.ID, using = "addPartyListBB")
+	private WebElement addToCustLst;
+
 	@FindBy(how = How.XPATH, using = ".//*[@id='f7ceb66d0e2b40c5ae8c296b9a13c9a9']/table/tbody/tr[3]/td[1]/input")
 	private WebElement CheckBox;
 
@@ -431,6 +434,9 @@ public class CustomerInfoPage {
 
 	@FindBy(how = How.ID, using = "postalCd")
 	private WebElement zipcode;
+
+	@FindBy(how = How.XPATH, using = "//input[contains(@name,'advSrchIp2')]")
+	private WebElement lglNm;
 
 	private String custNameFromGrid = ".//*[@id='data_content']/div[1]/table/tbody/tr";
 	private String loanOfficerFromGrid = ".//div[@id='searchData']/div[1]/div[2]/div[1]/table/tbody/tr";
@@ -1397,6 +1403,13 @@ public class CustomerInfoPage {
 		return this;
 	}
 
+	public void clickSrchBtn() {
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver, searchButton, 10);
+		searchButton.click();
+		Util.waitForAJAX(driver);
+	}
+
 	public String getSearchPopupText() {
 		return searchPopupText.getText();
 	}
@@ -1444,6 +1457,16 @@ public class CustomerInfoPage {
 		return companyLegalName.isDisplayed();
 	}
 
+	public boolean verifyCustPopup() {
+		Util.waitForAJAX(driver);
+		if (driver
+				.findElement(By.xpath("//h2[contains(.,'Search Customers')]"))
+				.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+
 	public CustomerInfoPage clickCancelButton() {
 		cancelButton.click();
 		Util.waitForAJAX(driver);
@@ -1458,6 +1481,14 @@ public class CustomerInfoPage {
 		Util.waitForAJAX(driver);
 		Util.enableAllDropdowns(driver);
 		companyLegalName.sendKeys(companyLegalNm);
+	}
+
+	public void enterCompanyShortNme() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView();", companyShortName);
+		js.executeScript("arguments[0].value = '';", companyShortName);
+		js.executeScript("arguments[0].value = 'Test Customer';",
+				companyShortName);
 	}
 
 	public void enterFullTimeEmpl(String fullTmEmpl) {
@@ -1489,7 +1520,20 @@ public class CustomerInfoPage {
 		Util.waitForElement(driver, customerSince, 5);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='';", customerSince);
-		js.executeScript("arguments[0].value='2013-06-03';", customerSince);
+		js.executeScript("arguments[0].value='2016-05-10';", customerSince);
+
+	}
+
+	public void clickDt() {
+		driver.findElement(
+				By.xpath("//*[@id='custSpecDiv']/div[1]/div[7]/div[1]/a"))
+				.click();
+	}
+
+	public void enterCustomerSince(String customerSinceValue) {
+		Util.waitForElement(driver, customerSince, 5);
+		customerSince.clear();
+		customerSince.sendKeys(customerSinceValue);
 	}
 
 	public void clickCustInfo() {
@@ -1534,6 +1578,7 @@ public class CustomerInfoPage {
 	public void enterTaxID() {
 		taxIdentification.clear();
 		taxIdentification.sendKeys("123456789");
+		Util.scrollUp(driver);
 	}
 
 	public void selectStateOfIncorp(String state) {
@@ -1547,6 +1592,21 @@ public class CustomerInfoPage {
 				.click();
 		driver.findElement(
 				By.xpath("//*[@id='addInfoDiv']/div/div[1]/span/input"))
+				.sendKeys("Corporation");
+		Thread.sleep(2000);
+		driver.findElement(
+				By.xpath("//*[contains(@id,'ui-id-') and (@class='ui-corner-all')]"))
+				.click();
+	}
+
+	public void selectCorporateStructureAsCorporation()
+			throws InterruptedException {
+		Util.waitForAJAX(driver);
+		driver.findElement(
+				By.xpath(".//*[@id='addInfoDiv']/div[4]/div[1]/span/input"))
+				.click();
+		driver.findElement(
+				By.xpath(".//*[@id='addInfoDiv']/div[4]/div[1]/span/input"))
 				.sendKeys("Corporation");
 		Thread.sleep(2000);
 		driver.findElement(
@@ -1570,30 +1630,58 @@ public class CustomerInfoPage {
 		dateOfGAR.sendKeys(GARDate);
 		Util.waitForAJAX(driver);
 	}
+	
+	public void enterGARAsOfDate() {
+		Util.waitForAJAX(driver);
+		dateOfGAR.clear();
+		dateOfGAR.sendKeys("2013-06-03");
+		Util.waitForAJAX(driver);
+	}
 
-	public void enterGAR(String gar) {
+	public void enterGAR() {
+		Util.waitForElement(driver, GAR, 5);
 		GAR.clear();
-		GAR.sendKeys(gar);
+		GAR.sendKeys("100");
 	}
 
 	public void enterAnnualReviewDate(String annualReviewDt) {
 		annualReviewDate.clear();
 		annualReviewDate.sendKeys(annualReviewDt);
 	}
+	
+	public void enterAnnualReviewDate() {
+		annualReviewDate.clear();
+		annualReviewDate.sendKeys("2013-06-03");
+	}
 
 	public void enterLastTaxReturnDate(String lastTaxReturnDt) {
 		lastTaxReturn.clear();
 		lastTaxReturn.sendKeys(lastTaxReturnDt);
+	}
+	
+	public void enterLastTaxReturnDate() {
+		lastTaxReturn.clear();
+		lastTaxReturn.sendKeys("2013-06-07");
 	}
 
 	public void enterInterimReviewDate(String interimReviewDt) {
 		interimReviewDate.clear();
 		interimReviewDate.sendKeys(interimReviewDt);
 	}
+	
+	public void enterInterimReviewDate() {
+		interimReviewDate.clear();
+		interimReviewDate.sendKeys("2014-06-07");
+	}
 
 	public void enterFiscalYearEndDate(String fiscalYearDt) {
 		fiscalYearDate.clear();
 		fiscalYearDate.sendKeys(fiscalYearDt);
+	}
+	
+	public void enterFiscalYearEndDate() {
+		fiscalYearDate.clear();
+		fiscalYearDate.sendKeys("16");
 	}
 
 	public void enterNumOfSigner(String num) {
@@ -2683,6 +2771,23 @@ public class CustomerInfoPage {
 		return new CustomerInfoPage(driver);
 	}
 
+	public MyRequests clickBackfromBreadCrum(String pageName) {
+		Actions action = new Actions(driver);
+		action.moveToElement(breadCrumText).build().perform();
+		lstWebElements = driver.findElements(By.xpath(backToPage));
+
+		for (int i = 1; i <= lstWebElements.size(); i++) {
+			element = driver.findElement(By.xpath(backToPage + "[" + i
+					+ "]/a[@id='breadCrumbLnk']"));
+			if (element.getText().equalsIgnoreCase(pageName)) {
+				element.click();
+			}
+		}
+
+		Util.waitForAJAX(driver);
+		return new MyRequests(driver);
+	}
+
 	public void clickEmployeeAsYes() {
 		Util.waitForElement(driver, empAsYes, 20);
 		empAsYes.click();
@@ -2724,6 +2829,12 @@ public class CustomerInfoPage {
 	public void CustSelectionCheckBox() {
 		Util.waitForElement(driver, CustSelectionCheckBox, 30);
 		CustSelectionCheckBox.click();
+		Util.waitForAJAX(driver);
+	}
+
+	public void addCustToLst() {
+		Util.waitForElement(driver, addToCustLst, 30);
+		addToCustLst.click();
 		Util.waitForAJAX(driver);
 	}
 
@@ -2841,6 +2952,35 @@ public class CustomerInfoPage {
 				.sendKeys("New Jersey");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//a[contains(.,'New Jersey')]")).click();
+	}
+
+	public void clickMatch() throws InterruptedException {
+		WebElement ele = driver.findElement(By
+				.xpath(".//*[@id='useCurrentCust']/span/span"));
+		Thread.sleep(2000);
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", ele);
+
+		Util.waitForAJAX(driver);
+		Util.waitForLoaderToFinish(driver);
+	}
+
+	public boolean verifyAddedCustomerIsDisplayed() {
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver, addedCustName, 30);
+		if (addedCustName.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+
+	public void enterLegalNm(String value) throws InterruptedException {
+		Util.waitForAJAX(driver);
+		Util.waitForElement(driver, lglNm, 10);
+		lglNm.clear();
+		lglNm.sendKeys(value);
+		Thread.sleep(3000);
+		clickSearchSubmitBtn();
 	}
 
 }

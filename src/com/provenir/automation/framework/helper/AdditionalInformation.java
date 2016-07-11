@@ -95,7 +95,7 @@ public class AdditionalInformation {
 	public void enterAvgAccBalance() {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='';", avgAccBalance);
-		js.executeScript("arguments[0].value='10000';", avgAccBalance);
+		js.executeScript("arguments[0].value='100';", avgAccBalance);
 	}
 
 	public void selectQuesObligation() throws InterruptedException {
@@ -189,6 +189,56 @@ public class AdditionalInformation {
 		// Thread.sleep(2000);
 		// driver.findElement(By.xpath("//strong[contains(.,'No')]")).click();
 		Util.waitForAJAX(driver);
+	}
+
+	public void enterValues() throws InterruptedException {
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[2]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[2]/div[2]/span/input"))
+				.sendKeys("Yes");
+		clickYes();
+		Thread.sleep(1000);
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[3]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[3]/div[2]/span/input"))
+				.sendKeys("Yes");
+		clickYes();
+		Thread.sleep(1000);
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[4]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[4]/div[2]/span/input"))
+				.sendKeys("No");
+		clickYes();
+		Thread.sleep(1000);
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[5]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[5]/div[2]/span/input"))
+				.sendKeys("No");
+		clickYes();
+		Thread.sleep(1000);
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[6]/div[2]/span/input"))
+				.clear();
+		driver.findElement(
+				By.xpath("//*[@id='BBCRUPSERTAPPINFO']/div/div[1]/div[5]/div/div[6]/div[2]/span/input"))
+				.sendKeys("No");
+		clickYes();
+		Thread.sleep(1000);
+
+	}
+
+	public void clickYes() {
+		WebElement e = driver.findElement(By.id("phyAdd"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", e);
 	}
 
 }

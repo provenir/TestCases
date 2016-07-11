@@ -8,7 +8,7 @@
 	<test name="Firefox Test">
 	<parameter name="browser" value="Firefox" />
 		<classes>
-			<class name="com.provenir.automation.framework.testcases.WorkflowsTasks" />
+			<class name="com.provenir.automation.framework.testcases.BOA_Wizard" />
 		</classes>
 	</test>
 

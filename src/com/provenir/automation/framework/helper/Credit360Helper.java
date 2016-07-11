@@ -94,6 +94,18 @@ public class Credit360Helper {
 	@FindBy(how = How.XPATH, using = "//h2[contains(.,'Credit 360')]")
 	private WebElement credit360Title;
 
+	@FindBy(how = How.ID, using = "credDcsn")
+	private WebElement creditDecision;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='credDcsnr']/div/a")
+	private WebElement verifyCreditDecisionSummary;
+
+	@FindBy(how = How.XPATH, using = "//h2[contains(.,'Decisioning')]")
+	private WebElement verifyCreditDecisionTitle;
+
+	@FindBy(how = How.XPATH, using = "//*[@id='addButtonDecision']/a")
+	private WebElement addBtnOnCreditDecision;
+
 	@FindBy(how = How.ID, using = "regB")
 	private WebElement regB;
 
@@ -120,7 +132,7 @@ public class Credit360Helper {
 
 	@FindBy(how = How.XPATH, using = "//*[@class='main_content_div taskMgmtblock']/div[3]/div/div/div[5]/div/div[4]/div[1]/span[2]")
 	private WebElement expandDueDiligence;
-	
+
 	@FindBy(how = How.XPATH, using = "//*[@class='main_content_div taskMgmtblock']/div[3]/div/div/div[5]/div/div[5]/div[1]/span[2]")
 	private WebElement expandLoanDocument;
 
@@ -192,8 +204,6 @@ public class Credit360Helper {
 
 	@FindBy(how = How.XPATH, using = "//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[1]")
 	private WebElement status;
-	
-	
 
 	private String creditWorkflowText = ".//*[@id='taskManagmntContainer']/div[1]/div/span/b";
 	private String creditTextOnWorkflow = ".//*[@id='taskManagmntContainer']/div[1]/div/a/span";
@@ -626,13 +636,41 @@ public class Credit360Helper {
 			return false;
 	}
 
+	public void clickCreditDecisionSummaryLink() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", creditDecision);
+		Util.waitForAJAX(driver);
+	}
+
+	public boolean isCreditDecisionSummaryDisplayed() {
+		Util.waitForAJAX(driver);
+		if (verifyCreditDecisionSummary.isDisplayed())
+			return true;
+		else
+			return false;
+	}
+
+	public void clickAddOnCreditDecision() {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", addBtnOnCreditDecision);
+		Util.waitForAJAX(driver);
+		Util.waitForAJAX(driver);
+		Util.waitForLoaderToFinish(driver);
+	}
+
+	public boolean verifyCreditDecisionTitle() {
+		Util.waitForAJAX(driver);
+		Util.scollTop(driver);
+		return verifyCreditDecisionTitle.isDisplayed();
+	}
+
 	public void expandWorkflow() {
 		Util.waitForAJAX(driver);
 		Util.scrollUp(driver);
 		Util.waitForElement(driver, expnadIconOnTM, 10);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].clcik();", expnadIconOnTM);
-//		expnadIconOnTM.click();
+		// expnadIconOnTM.click();
 		Util.waitForAJAX(driver);
 		Util.scrollBottom(driver);
 	}
@@ -657,7 +695,7 @@ public class Credit360Helper {
 		expandDueDiligence.click();
 		Util.waitForAJAX(driver);
 	}
-	
+
 	public void expandLoanDocument() {
 		Util.scrollDown(driver);
 		Util.waitForAJAX(driver);

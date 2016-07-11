@@ -6,7 +6,7 @@
 		</newCreditRequest>
 
 		<customerInformation>
-			<customerSince>2013-06-03</customerSince>
+			<customerSince>2016-05-10</customerSince>
 			<taxIdentification>TaxID 1010</taxIdentification>
 			<corporateStructure>Corporation</corporateStructure>
 			<GARAsOfDate>2013-06-03</GARAsOfDate>
@@ -18,7 +18,7 @@
 			<interimReviewDate>2013-06-03</interimReviewDate>
 			<fiscalYearEndDate>16</fiscalYearEndDate>
 			<NAICSCode>111160-Rice Farming</NAICSCode>
-			<SICCode>101100-Iron ores</SICCode>
+			<SICCode>5921-Liquor Stores</SICCode>
 			<stateOfIncorp>Alaska</stateOfIncorp>
 			<division>Private</division>
 			<region>Western Canada</region>
@@ -148,4 +148,8 @@
 				<avgBalance>10000</avgBalance>
 			</additionalInfo>
 	</newCreditReqWizard>
+	
+	<createCustomer>
+		<newCust></newCust>
+	</createCustomer>
 	</testdata>
