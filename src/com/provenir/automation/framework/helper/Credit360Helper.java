@@ -205,6 +205,12 @@ public class Credit360Helper {
 	@FindBy(how = How.XPATH, using = "//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[1]")
 	private WebElement status;
 
+	@FindBy(how = How.XPATH, using = "//*[@id='UPSERTCUSTCREDREQFORM']/div/div[8]/a/span")
+	private WebElement editBtnOnCrdSummary;
+
+	@FindBy(how = How.ID, using = "savecreddetails")
+	private WebElement saveCredSumm;
+
 	private String creditWorkflowText = ".//*[@id='taskManagmntContainer']/div[1]/div/span/b";
 	private String creditTextOnWorkflow = ".//*[@id='taskManagmntContainer']/div[1]/div/a/span";
 	private String facilityWorkflowText = ".//*[@id='taskManagmntContainer']/div[3]/div/span/b";
@@ -323,6 +329,7 @@ public class Credit360Helper {
 	}
 
 	public void reassignTaskOfCustomerAcceptance() throws InterruptedException {
+		Util.scrollDown(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("argumen5ts[0].click();",
 				actionMenuOnCustomerAcceptanceOfTM);
@@ -669,10 +676,17 @@ public class Credit360Helper {
 		Util.scrollUp(driver);
 		Util.waitForElement(driver, expnadIconOnTM, 10);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].clcik();", expnadIconOnTM);
+		js.executeScript("arguments[0].click();", expnadIconOnTM);
 		// expnadIconOnTM.click();
 		Util.waitForAJAX(driver);
 		Util.scrollBottom(driver);
+	}
+
+	public void clickWflwNm() {
+		WebElement e = driver.findElement(By
+				.xpath("//*[@id='taskManagmntContainer']/div[1]/div/span/b"));
+		e.click();
+		Util.scrollDown(driver);
 	}
 
 	public void expandDecision() {
@@ -740,14 +754,59 @@ public class Credit360Helper {
 		return status.getText().trim();
 	}
 
+	public boolean verifyDueDiligence() {
+		WebElement e = driver
+				.findElement(By
+						.xpath(".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"));
+		return e.isDisplayed();
+	}
+
+	public boolean verifySubmitted() {
+		WebElement e = driver
+				.findElement(By
+						.xpath("//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]"));
+		return e.isDisplayed();
+	}
+
+	public boolean verifyCreditDecisioning() {
+		WebElement e = driver
+				.findElement(By
+						.xpath(".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"));
+		return e.isDisplayed();
+	}
+
 	public boolean verifyReqStatus() {
 		Util.waitForAJAX(driver);
-		if (status.getText().trim().equalsIgnoreCase("Credit Decisioning")
-				|| status.getText().trim()
-						.equalsIgnoreCase("Customer Acceptance"))
+		WebElement e = driver
+				.findElement(By
+						.xpath(".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"));
+		WebElement f = driver
+				.findElement(By
+						.xpath(".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Customer Acceptance')]"));
+		if (e.isDisplayed() || f.isDisplayed())
 			return true;
 		else
 			return false;
+	}
+
+	public void clickEditBtnOnCreditSummary() {
+		Util.waitForElement(driver, editBtnOnCrdSummary, 10);
+		editBtnOnCrdSummary.click();
+		Util.waitForAJAX(driver);
+		Util.waitForAJAX(driver);
+	}
+
+	public void clickSaveOnCredSumm() {
+		Util.waitForElement(driver, saveCredSumm, 10);
+		saveCredSumm.click();
+		Util.waitForAJAX(driver);
+		Util.waitForAJAX(driver);
+	}
+
+	public void clickCreditSummary() {
+		Util.waitForElement(driver, creditSummary, 5);
+		creditSummary.click();
+		Util.waitForAJAX(driver);
 	}
 
 }

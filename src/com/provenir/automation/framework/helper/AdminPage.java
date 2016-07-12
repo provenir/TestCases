@@ -1317,6 +1317,16 @@ public class AdminPage {
 			return false;
 	}
 
+	public void clickCancelOnChklistDetails() {
+		WebElement e = driver
+				.findElement(By
+						.xpath("//*[@id='UPSERTCHECKLISTDETAILS']/div/div/div[7]/a[1]//span/span[contains(.,'Cancel')]"));
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", e);
+		Util.waitForAJAX(driver);
+		Util.waitForAJAX(driver);
+	}
+
 	public void enterRole2() {
 		Util.waitForElement(driver, srchTeamRole, 10);
 		srchTeamRole.clear();

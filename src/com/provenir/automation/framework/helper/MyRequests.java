@@ -764,7 +764,9 @@ public class MyRequests {
 	public Credit360Helper gotoCredit360() {
 		Util.waitForAJAX(driver);
 		Util.waitForElement(driver, credit360HyperlinkOnMyReqPage, 20);
-		credit360HyperlinkOnMyReqPage.click();
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", credit360HyperlinkOnMyReqPage);
+//		credit360HyperlinkOnMyReqPage.click();
 		Util.waitForAJAX(driver);
 		return new Credit360Helper(driver);
 	}

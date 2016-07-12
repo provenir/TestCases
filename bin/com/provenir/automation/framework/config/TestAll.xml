@@ -8,9 +8,45 @@
 	<test name="Firefox Test">
 	<parameter name="browser" value="Firefox" />
 		<classes>
+			<class name="com.provenir.automation.framework.testcases.DefaultRoles" />
+		</classes>
+	</test>
+	
+	<test name="Firefox Test1">
+	<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.provenir.automation.framework.testcases.WorkflowsTasks" />
+		</classes>
+	</test>
+	
+	<test name="Firefox Test2">
+	<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.provenir.automation.framework.testcases.Checklists" />
+		</classes>
+	</test>
+	
+	<test name="Firefox Test3">
+	<parameter name="browser" value="Firefox" />
+		<classes>
 			<class name="com.provenir.automation.framework.testcases.BOA_Wizard" />
 		</classes>
 	</test>
+	
+	<test name="Firefox Test4">
+	<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.provenir.automation.framework.testcases.RegB" />
+		</classes>
+	</test>
+	
+	<test name="Firefox Test5">
+	<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.provenir.automation.framework.testcases.StatusUpdate" />
+		</classes>
+	</test>
+	
 
 <!--
 	<test name="IE Test">

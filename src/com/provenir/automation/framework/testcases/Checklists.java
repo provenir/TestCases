@@ -142,5 +142,6 @@ public class Checklists extends TestCaseExecutor {
 				.verifyAttachPersonalFinancialStatements_LAst3YearsofIndividualBorrowersOrGuarantors();
 		adminPage.verifyAttachCopyofPassportOrDriversLicenseOrGovtID();
 		adminPage.verifyAttachCorporateBorrowingResolution();
+		adminPage.clickCancelOnChklistDetails();
 	}
 }

@@ -190,6 +190,7 @@ public class StatusUpdate extends TestCaseExecutor {
 				"testdata/newCreditReqWizard/customerInformation/asIndividual/firstName",
 				custName);
 
+		Thread.sleep(2000);
 		customerInfoPage.enterDateOfBirth();
 
 		customerInfoPage.enterMiddleName();
@@ -336,7 +337,7 @@ public class StatusUpdate extends TestCaseExecutor {
 	public void test21_verifyCreditStatusAsSubmitted()
 			throws InterruptedException {
 		Thread.sleep(2000);
-		Assert.assertEquals(credit360Helper.verifyStatus(), "Status: Submitted");
+		Assert.assertTrue(credit360Helper.verifySubmitted());
 	}
 
 	@Test(priority = 22)
@@ -371,16 +372,18 @@ public class StatusUpdate extends TestCaseExecutor {
 	@Test(priority = 24)
 	public void test24_verifyCreditStatusAsCreditDecisioning()
 			throws InterruptedException {
-		Thread.sleep(2000);
-		Assert.assertEquals(credit360Helper.verifyStatus(),
-				"Status: Credit Decisioning");
+		Thread.sleep(3000);
+		credit360Helper.clickCreditSummary();
+		Assert.assertTrue(credit360Helper.verifyReqStatus());
 	}
 
 	@Test(priority = 25)
 	public void test25_completeDecision() throws InterruptedException {
 		Thread.sleep(2000);
 		credit360Helper.clickTaskManagement();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
+		credit360Helper.clickWflwNm();
+		credit360Helper.expandWorkflow();
 		credit360Helper.expandWorkflow();
 		credit360Helper.expandDecision();
 		Thread.sleep(1000);
@@ -410,6 +413,7 @@ public class StatusUpdate extends TestCaseExecutor {
 	@Test(priority = 27)
 	public void test27_verifyCreditStatus() throws InterruptedException {
 		Thread.sleep(2000);
+		credit360Helper.clickCreditSummary();
 		Assert.assertTrue(credit360Helper.verifyReqStatus());
 	}
 
@@ -418,6 +422,7 @@ public class StatusUpdate extends TestCaseExecutor {
 		Thread.sleep(2000);
 		credit360Helper.clickTaskManagement();
 		Thread.sleep(1000);
+		credit360Helper.expandWorkflow();
 		credit360Helper.expandWorkflow();
 		Thread.sleep(1000);
 		credit360Helper.reassignTaskOfCustomerAcceptance();
@@ -460,7 +465,8 @@ public class StatusUpdate extends TestCaseExecutor {
 	@Test(priority = 31)
 	public void test31_verifyStatusAsDueDiligence() throws InterruptedException {
 		Thread.sleep(2000);
-		Assert.assertEquals(credit360Helper.verifyStatus(), "Due Diligence");
+		credit360Helper.clickCreditSummary();
+		Assert.assertTrue(credit360Helper.verifyDueDiligence());
 	}
 
 	@Test(priority = 32)
@@ -469,6 +475,8 @@ public class StatusUpdate extends TestCaseExecutor {
 		credit360Helper.clickTaskManagement();
 		Thread.sleep(1000);
 		credit360Helper.expandWorkflow();
+		credit360Helper.expandWorkflow();
+		Thread.sleep(1000);
 		credit360Helper.expandCustomerAcceptance();
 		Thread.sleep(1000);
 		credit360Helper.reassignTaskOfDueDiligence();
@@ -521,7 +529,8 @@ public class StatusUpdate extends TestCaseExecutor {
 	@Test(priority = 35)
 	public void test35_verifyStatusAsDueDiligence() throws InterruptedException {
 		Thread.sleep(2000);
-		Assert.assertEquals(credit360Helper.verifyStatus(), "Due Diligence");
+		credit360Helper.clickCreditSummary();
+		Assert.assertTrue(credit360Helper.verifyDueDiligence());
 	}
 
 }

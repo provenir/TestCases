@@ -2243,6 +2243,7 @@ public class CustomerInfoPage {
 	}
 
 	public void enterCustFirstName(String firstNm) {
+		custFirstName.clear();
 		custFirstName.sendKeys(firstNm);
 	}
 
@@ -2720,8 +2721,9 @@ public class CustomerInfoPage {
 	public void clickMatchPopup() {
 		Util.waitForAJAX(driver);
 		Util.waitForElement(driver, custPopUp, 30);
-		driver.findElement(By.xpath(".//*[@id='useCurrentCust']/span/span"))
-				.click();
+		WebElement e = driver.findElement(By.xpath(".//*[@id='useCurrentCust']/span/span"));
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript("arguments[0].click();", e);
 		Util.waitForAJAX(driver);
 	}
 
