@@ -5,10 +5,9 @@
 	<parameter name="environment"  value="src/com/provenir/automation/framework/config/Env.properties"/>
 
 
-	<test name="Firefox Test">
+	<test name="Firefox Test0">
 	<parameter name="browser" value="Firefox" />
 		<classes>
-<<<<<<< HEAD
 			<class name="com.provenir.automation.framework.testcases.DefaultRoles" />
 		</classes>
 	</test>
@@ -17,9 +16,6 @@
 	<parameter name="browser" value="Firefox" />
 		<classes>
 			<class name="com.provenir.automation.framework.testcases.WorkflowsTasks" />
-=======
-			<class name="com.provenir.automation.framework.testcases.BOA_Wizard" />
->>>>>>> ce4d9838ad172a3e787b56fb98d2840d519faa4a
 		</classes>
 	</test>
 	

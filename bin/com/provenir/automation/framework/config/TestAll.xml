@@ -5,7 +5,7 @@
 	<parameter name="environment"  value="src/com/provenir/automation/framework/config/Env.properties"/>
 
 
-	<test name="Firefox Test">
+	<test name="Firefox Test0">
 	<parameter name="browser" value="Firefox" />
 		<classes>
 			<class name="com.provenir.automation.framework.testcases.DefaultRoles" />
