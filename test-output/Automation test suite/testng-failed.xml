@@ -6,17 +6,32 @@
   <test name="Firefox Test(failed)" parallel="tests">
     <parameter name="browser" value="Firefox"/>
     <classes>
-      <class name="com.provenir.automation.framework.testcases.Collateral360">
+      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
         <methods>
+          <include name="test9_saveIndividualCustDetails"/>
+          <include name="test21_verifyCreditStatusAsSubmitted"/>
+          <include name="test33_completeChildTasksOfDueDiligence"/>
+          <include name="test28_completeCustomerAcceptance"/>
+          <include name="test27_verifyCreditStatus"/>
           <include name="beforeMethod"/>
-          <include name="test22_cancelUCCDetails"/>
-          <include name="test21_updateUCC"/>
-          <include name="test20_saveUCC"/>
+          <include name="test24_verifyCreditStatusAsCreditDecisioning"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
+          <include name="test12_saveCollateralInformation"/>
+          <include name="test34_refreshPage"/>
           <include name="initialize"/>
+          <include name="test35_verifyStatusAsDueDiligence"/>
+          <include name="test26_refreshPage"/>
+          <include name="test25_completeDecision"/>
+          <include name="test31_verifyStatusAsDueDiligence"/>
+          <include name="test29_completeChildTaskOfCustomerAcceptance"/>
+          <include name="test32_completeDueDiligence"/>
+          <include name="test23_refreshPage"/>
+          <include name="test22_completePreAnalysis"/>
+          <include name="test14_saveTransactionDetails"/>
+          <include name="test30_refreshPage"/>
         </methods>
-      </class> <!-- com.provenir.automation.framework.testcases.Collateral360 -->
+      </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
     </classes>
   </test> <!-- Firefox Test(failed) -->
 </suite> <!-- Failed suite [Automation test suite] -->

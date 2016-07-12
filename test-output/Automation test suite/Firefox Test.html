@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Firefox Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/18/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 23 09:57:27 IST 2016</td>
+<td>Started on:</td><td>Tue Jul 12 17:35:12 IST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>310 seconds (310737 ms)</td>
+<tr><td>Total time:</td><td>657 seconds (657202 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,44 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test3_selectAnyRuleFromDEAndSave()'><b>test3_selectAnyRuleFromDEAndSave</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
-<td><div><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.provenir.automation.framework.helper.AdminPage.selectRule(AdminPage.java:869)
-	at com.provenir.automation.framework.testcases.RuleBasedSecurity.test3_selectAnyRuleFromDEAndSave(RuleBasedSecurity.java:77)
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test12_saveCollateralInformation()'><b>test12_saveCollateralInformation</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (444, 439.20001220703125). Other element would receive the click: &lt;td class=&quot;topGap topGap&quot; valign=&quot;top&quot;&gt;&lt;/td&gt;
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.CollateralInfoPage.selectCollType(CollateralInfoPage.java:481)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test12_saveCollateralInformation(StatusUpdate.java:252)
 	at java.util.concurrent.FutureTask.run(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2056548407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2056548407'><pre>java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
-	at java.util.ArrayList.rangeCheck(Unknown Source)
-	at java.util.ArrayList.get(Unknown Source)
-	at com.provenir.automation.framework.helper.AdminPage.selectRule(AdminPage.java:869)
-	at com.provenir.automation.framework.testcases.RuleBasedSecurity.test3_selectAnyRuleFromDEAndSave(RuleBasedSecurity.java:77)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280400968", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace280400968'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (444, 439.20001220703125). Other element would receive the click: &lt;td class=&quot;topGap topGap&quot; valign=&quot;top&quot;&gt;&lt;/td&gt;
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.CollateralInfoPage.selectCollType(CollateralInfoPage.java:481)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test12_saveCollateralInformation(StatusUpdate.java:252)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,7 +135,1330 @@ function toggleAllBoxes() {
 	at java.lang.Thread.run(Unknown Source)
 </pre></div></td>
 <td>13</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test14_saveTransactionDetails()'><b>test14_saveTransactionDetails</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (446, 534.2000122070312). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 1013px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 76 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.TransactionInfoPage.selectFacilityType(TransactionInfoPage.java:172)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test14_saveTransactionDetails(StatusUpdate.java:286)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace973191217", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace973191217'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (446, 534.2000122070312). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 1013px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 76 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.TransactionInfoPage.selectFacilityType(TransactionInfoPage.java:172)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test14_saveTransactionDetails(StatusUpdate.java:286)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test21_verifyCreditStatusAsSubmitted()'><b>test21_verifyCreditStatusAsSubmitted</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]&quot;}
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifySubmitted(Credit360Helper.java:766)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test21_verifyCreditStatusAsSubmitted(StatusUpdate.java:340)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483293543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483293543'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]&quot;}
+Command duration or timeout: 5.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifySubmitted(Credit360Helper.java:766)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test21_verifyCreditStatusAsSubmitted(StatusUpdate.java:340)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;UPSERTCUSTCREDREQFORM&apos;]/div/div[6]/div[2]/div[1]/div[contains(.,&apos;Submitted&apos;)]&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</pre></div></td>
+<td>7</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test22_completePreAnalysis()'><b>test22_completePreAnalysis</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;taskAssigee&apos;]/input&quot;}
+Command duration or timeout: 5.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;taskAssigee&apos;]/input}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:49)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:572)
+	at com.provenir.automation.framework.helper.Credit360Helper.enterAssignedUser(Credit360Helper.java:438)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test22_completePreAnalysis(StatusUpdate.java:351)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;taskAssigee&apos;]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace135475669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace135475669'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;taskAssigee&apos;]/input&quot;}
+Command duration or timeout: 5.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=//*[@id=&apos;taskAssigee&apos;]/input}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.remote.internal.WebElementToJsonConverter.apply(WebElementToJsonConverter.java:49)
+	at com.google.common.collect.Iterators$8.transform(Iterators.java:799)
+	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:48)
+	at com.google.common.collect.Iterators.addAll(Iterators.java:362)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
+	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:572)
+	at com.provenir.automation.framework.helper.Credit360Helper.enterAssignedUser(Credit360Helper.java:438)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test22_completePreAnalysis(StatusUpdate.java:351)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;taskAssigee&apos;]/input&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+</pre></div></td>
+<td>23</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test23_refreshPage()'><b>test23_refreshPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 70 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test23_refreshPage(StatusUpdate.java:365)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace132092771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace132092771'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 70 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test23_refreshPage(StatusUpdate.java:365)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test24_verifyCreditStatusAsCreditDecisioning()'><b>test24_verifyCreditStatusAsCreditDecisioning</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test24_verifyCreditStatusAsCreditDecisioning(StatusUpdate.java:376)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1106430912", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1106430912'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test24_verifyCreditStatusAsCreditDecisioning(StatusUpdate.java:376)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test25_completeDecision()'><b>test25_completeDecision</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.09 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickWflwNm(Credit360Helper.java:688)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test25_completeDecision(StatusUpdate.java:385)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1755769767", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1755769767'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.09 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickWflwNm(Credit360Helper.java:688)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test25_completeDecision(StatusUpdate.java:385)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+</pre></div></td>
+<td>9</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test26_refreshPage()'><b>test26_refreshPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 90 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test26_refreshPage(StatusUpdate.java:406)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace68576306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace68576306'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 90 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test26_refreshPage(StatusUpdate.java:406)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test27_verifyCreditStatus()'><b>test27_verifyCreditStatus</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 70 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test27_verifyCreditStatus(StatusUpdate.java:416)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace953640975", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace953640975'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 70 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test27_verifyCreditStatus(StatusUpdate.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>2</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test28_completeCustomerAcceptance()'><b>test28_completeCustomerAcceptance</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.provenir.automation.framework.helper.Credit360Helper.reassignTaskOfCustomerAcceptance(Credit360Helper.java:334)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test28_completeCustomerAcceptance(StatusUpdate.java:428)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A:69)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26353671", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26353671'><pre>org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.provenir.automation.framework.helper.Credit360Helper.reassignTaskOfCustomerAcceptance(Credit360Helper.java:334)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test28_completeCustomerAcceptance(StatusUpdate.java:428)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.anonymous(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A line 69 &gt; Function:1)
+	at &lt;anonymous class&gt;.handleEvaluateEvent(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A:69)
+</pre></div></td>
+<td>5</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test29_completeChildTaskOfCustomerAcceptance()'><b>test29_completeChildTaskOfCustomerAcceptance</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (244, 782.5). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test29_completeChildTaskOfCustomerAcceptance(StatusUpdate.java:444)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace128471667", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace128471667'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (244, 782.5). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test29_completeChildTaskOfCustomerAcceptance(StatusUpdate.java:444)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>0</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test30_refreshPage()'><b>test30_refreshPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 68 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test30_refreshPage(StatusUpdate.java:458)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821045999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821045999'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 68 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test30_refreshPage(StatusUpdate.java:458)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test31_verifyStatusAsDueDiligence()'><b>test31_verifyStatusAsDueDiligence</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test31_verifyStatusAsDueDiligence(StatusUpdate.java:468)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1283831901", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1283831901'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 72 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test31_verifyStatusAsDueDiligence(StatusUpdate.java:468)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>2</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test32_completeDueDiligence()'><b>test32_completeDueDiligence</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.01 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test32_completeDueDiligence(StatusUpdate.java:480)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1202555572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202555572'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.01 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test32_completeDueDiligence(StatusUpdate.java:480)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+</pre></div></td>
+<td>30</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test33_completeChildTasksOfDueDiligence()'><b>test33_completeChildTasksOfDueDiligence</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.06 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandDueDiligence(Credit360Helper.java:709)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test33_completeChildTasksOfDueDiligence(StatusUpdate.java:498)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1551576076", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1551576076'><pre>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 5.06 seconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandDueDiligence(Credit360Helper.java:709)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test33_completeChildTasksOfDueDiligence(StatusUpdate.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+</pre></div></td>
+<td>5</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test34_refreshPage()'><b>test34_refreshPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test34_refreshPage(StatusUpdate.java:522)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace926452119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace926452119'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 81 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test34_refreshPage(StatusUpdate.java:522)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>7</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test35_verifyStatusAsDueDiligence()'><b>test35_verifyStatusAsDueDiligence</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test35_verifyStatusAsDueDiligence(StatusUpdate.java:532)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace155059138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace155059138'><pre>org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: &lt;div class=&quot;screenoverlay&quot; style=&quot;height: 2385px; z-index: 1002;&quot;&gt;&lt;/div&gt;
+Command duration or timeout: 66 milliseconds
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test35_verifyStatusAsDueDiligence(StatusUpdate.java:532)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+</pre></div></td>
+<td>2</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test9_saveIndividualCustDetails()'><b>test9_saveIndividualCustDetails</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;useCurrentCust&apos;]/span/span&quot;}
+Command duration or timeout: 239 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=.//*[@id=&apos;useCurrentCust&apos;]/span/span}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.CustomerInfoPage.clickMatchPopup(CustomerInfoPage.java:2724)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test9_saveIndividualCustDetails(StatusUpdate.java:222)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;useCurrentCust&apos;]/span/span&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+	at &lt;anonymous class&gt;..send(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..ajax(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..domManip/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..each(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;..domManip(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..append(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..registerPlugin/&lt;/$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
+	at &lt;anonymous class&gt;..html/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..access(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;..html(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..registerPlugin/&lt;/$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
+	at &lt;anonymous class&gt;.$.fn.ajaxSubmit/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 &gt; eval:160)
+	at &lt;anonymous class&gt;.$.fn.ajaxSubmit/options.success(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 &gt; eval:170)
+	at &lt;anonymous class&gt;.jQuery.Callbacks/fire(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;.jQuery.Callbacks/self.fireWith(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;.done(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..send/callback(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+... Removed 19 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1188403174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188403174'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;useCurrentCust&apos;]/span/span&quot;}
+Command duration or timeout: 239 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+*** Element info: {Using=xpath, value=.//*[@id=&apos;useCurrentCust&apos;]/span/span}
+Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.CustomerInfoPage.clickMatchPopup(CustomerInfoPage.java:2724)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test9_saveIndividualCustDetails(StatusUpdate.java:222)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//*[@id=&apos;useCurrentCust&apos;]/span/span&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:03:33&apos;
+System info: host: &apos;parasharb-w7&apos;, ip: &apos;172.27.103.103&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_75&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
+	at &lt;anonymous class&gt;..send(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..ajax(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..domManip/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..each(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;..domManip(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..append(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..registerPlugin/&lt;/$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
+	at &lt;anonymous class&gt;..html/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..access(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;..html(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..registerPlugin/&lt;/$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
+	at &lt;anonymous class&gt;.$.fn.ajaxSubmit/&lt;(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 &gt; eval:160)
+	at &lt;anonymous class&gt;.$.fn.ajaxSubmit/options.success(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 &gt; eval:170)
+	at &lt;anonymous class&gt;.jQuery.Callbacks/fire(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;.jQuery.Callbacks/self.fireWith(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
+	at &lt;anonymous class&gt;.done(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at &lt;anonymous class&gt;..send/callback(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+</pre></div></td>
+<td>116</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -123,60 +1468,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.landingPage()'><b>landingPage</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test0_landingPage()'><b>test0_landingPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>44</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>26</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test10_searchReq()'><b>test10_searchReq</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test10_verifyCollateralInformationPage()'><b>test10_verifyCollateralInformationPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>31</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>11</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test11_verifySecurityforOtherUser()'><b>test11_verifySecurityforOtherUser</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test11_verifyAddNewBtnOnCollateralInformation()'><b>test11_verifyAddNewBtnOnCollateralInformation</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test13_verifyTransactionInformationPage()'><b>test13_verifyTransactionInformationPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>10</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test16_verifyAdditionalInformation()'><b>test16_verifyAdditionalInformation</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>5</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test17_verifySummaryOfApplicationTitle()'><b>test17_verifySummaryOfApplicationTitle</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>4</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test18_clickSubmitOnLastStepOfBOAWizard()'><b>test18_clickSubmitOnLastStepOfBOAWizard</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>141</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test19_verifyReqOnDashboard()'><b>test19_verifyReqOnDashboard</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>4</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test1_gotoBOAWizard()'><b>test1_gotoBOAWizard</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>1</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test20_verifyCredit360Page()'><b>test20_verifyCredit360Page</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
+<td></td>
+<td>21</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test2_verifyManadatoryFieldsOnRequestSummary()'><b>test2_verifyManadatoryFieldsOnRequestSummary</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
 <td>0</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test1_clickSecuritySettings()'><b>test1_clickSecuritySettings</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test3_saveRequestSummaryInformation()'><b>test3_saveRequestSummaryInformation</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>33</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>19</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test2_enterEditPermission()'><b>test2_enterEditPermission</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test4_step_verifyAddBtnOnCustInfoPage()'><b>test4_step_verifyAddBtnOnCustInfoPage</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>0</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>2</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test4_verifySecurityWithOtherUser()'><b>test4_verifySecurityWithOtherUser</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
-<td></td>
-<td>29</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
-<tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test5_loginWithOtherUser()'><b>test5_loginWithOtherUser</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
-<td></td>
-<td>32</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
-<tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test6_goToSecuritySettingsAndSelectGroup()'><b>test6_goToSecuritySettingsAndSelectGroup</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
-<td></td>
-<td>34</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
-<tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test7_enterPermission()'><b>test7_enterPermission</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test5_verifyManadatoryFieldsForBusinessTypCustomer()'><b>test5_verifyManadatoryFieldsForBusinessTypCustomer</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
 <td>0</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test8_selectRuleFromDEAndSave()'><b>test8_selectRuleFromDEAndSave</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test6_saveBusinessCustDetails()'><b>test6_saveBusinessCustDetails</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>28</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>113</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 <tr>
-<td title='com.provenir.automation.framework.testcases.RuleBasedSecurity.test9_loginWithOtherUser()'><b>test9_loginWithOtherUser</b><br>Test class: com.provenir.automation.framework.testcases.RuleBasedSecurity</td>
+<td title='com.provenir.automation.framework.testcases.StatusUpdate.test8_verifyManadatoryFieldsForIndividualCustomer()'><b>test8_verifyManadatoryFieldsForIndividualCustomer</b><br>Test class: com.provenir.automation.framework.testcases.StatusUpdate</td>
 <td></td>
-<td>32</td>
-<td>com.provenir.automation.framework.testcases.RuleBasedSecurity@6ae97281</td></tr>
+<td>20</td>
+<td>com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27</td></tr>
 </table><p>
 </body>
 </html>
