@@ -692,7 +692,7 @@ public class TransactionInfoPage {
 		driver.findElement(
 				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"))
 				.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		driver.findElement(
 				By.xpath(".//*[@id='BBUPSERTCREDLNSUMMFORM']/div[5]/div[3]/div/table/tbody/tr/td[4]/span/input"))
 				.clear();

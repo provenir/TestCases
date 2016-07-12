@@ -267,7 +267,8 @@ public class BOA_Wizard extends TestCaseExecutor {
 	}
 
 	@Test(priority = 13)
-	public void test13_verifyTransactionInformationPage() {
+	public void test13_verifyTransactionInformationPage() throws InterruptedException {
+		Thread.sleep(2000);
 		transactionInfoPage = collateralInfoPage.clickOnNextButton();
 
 		Assert.assertEquals(transactionInfoPage.getTransactionInfoTitle(),
@@ -291,6 +292,7 @@ public class BOA_Wizard extends TestCaseExecutor {
 		transactionInfoPage.selBorrowerOnTransactionInformation();
 
 		Thread.sleep(2000);
+		
 		transactionInfoPage.selRelationshipTyp();
 		Thread.sleep(2000);
 		transactionInfoPage.clickPrimaryChkbox();

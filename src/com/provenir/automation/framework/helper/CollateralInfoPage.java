@@ -260,6 +260,8 @@ public class CollateralInfoPage {
 	}
 
 	public CollateralInfoPage clickOnSaveButton() {
+		Util.scrollDown(driver);
+		Util.waitForElement(driver, saveButton, 5);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", saveButton);
 		Util.waitForAJAX(driver);
@@ -488,7 +490,7 @@ public class CollateralInfoPage {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//strong[contains(.,'Shares')]")).click();
 	}
-	
+
 	public void selectCollTypeAsRE() throws InterruptedException {
 		Util.enableAllDropdowns(driver);
 		Util.waitForElementPresent(driver, By.xpath(collateralTypeField), 10);
@@ -505,7 +507,6 @@ public class CollateralInfoPage {
 		driver.findElement(By.xpath("//a[contains(.,'Real Estate')]")).click();
 	}
 
-
 	public void selectCollSubType() throws InterruptedException {
 		Util.waitForElementPresent(driver, By.xpath(collSubType), 10);
 		driver.findElement(By.xpath("//*[@id='collSubTyp']/span/input"))
@@ -518,7 +519,7 @@ public class CollateralInfoPage {
 		driver.findElement(By.xpath("//strong[contains(.,'Corporate')]"))
 				.click();
 	}
-	
+
 	public void selectCollSubTypeAsRetailOffice() throws InterruptedException {
 		Util.waitForElementPresent(driver, By.xpath(collSubType), 10);
 		driver.findElement(By.xpath("//*[@id='collSubTyp']/span/input"))

@@ -39,14 +39,6 @@
 			<class name="com.provenir.automation.framework.testcases.RegB" />
 		</classes>
 	</test>
-	
-	<test name="Firefox Test5">
-	<parameter name="browser" value="Firefox" />
-		<classes>
-			<class name="com.provenir.automation.framework.testcases.StatusUpdate" />
-		</classes>
-	</test>
-	
 
 <!--
 	<test name="IE Test">
