@@ -543,10 +543,11 @@ public class MyRequests {
 	}
 
 	public boolean verifyDecisionStatusAsUndecided() {
-		WebElement ele = driver.findElement(By
-				.xpath("//td[contains(.,'Undecided')]"));
+		WebElement ele = driver
+				.findElement(By
+						.xpath("//*[@id='SAVEREQUESTFILTERFORM']/div[2]/div/div[2]/p/div/button"));
 		String s1 = ele.getText().trim();
-		if (s1.equalsIgnoreCase("Undecided")) {
+		if (s1.equalsIgnoreCase("Counteroffer")) {
 			return true;
 		} else
 			return false;
@@ -561,9 +562,8 @@ public class MyRequests {
 		decisionMilestone.click();
 		allOnDecision.click();
 
-		WebElement ele = driver
-				.findElement(By
-						.xpath(".//*[@id='SAVEREQUESTFILTERFORM']/div[2]/div/div[2]/p/div/div/ul/li[4]/label/input"));
+		WebElement ele = driver.findElement(By
+				.xpath("//input[contains(@value,'Counteroffer')]"));
 		ele.click();
 		decisionMilestone.click();
 	}
@@ -713,7 +713,7 @@ public class MyRequests {
 		myRequests.click();
 		Util.waitForAJAX(driver);
 	}
-	
+
 	public void clickMyReq() {
 		Util.waitForElement(driver, myRequests, 10);
 		Util.scollTop(driver);
@@ -766,7 +766,7 @@ public class MyRequests {
 		Util.waitForElement(driver, credit360HyperlinkOnMyReqPage, 20);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", credit360HyperlinkOnMyReqPage);
-//		credit360HyperlinkOnMyReqPage.click();
+		// credit360HyperlinkOnMyReqPage.click();
 		Util.waitForAJAX(driver);
 		return new Credit360Helper(driver);
 	}

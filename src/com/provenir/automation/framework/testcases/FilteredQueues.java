@@ -238,44 +238,44 @@ public class FilteredQueues extends TestCaseExecutor {
 		groupQueue.clickFilterBtn();
 	}
 
-	// role queue
-
-	@Test(priority = 28)
-	public void test29_verifyRoleQueuePageDisplayed() {
-		myRequests = groupQueue.clickHome();
-		roleQueue = myRequests.clickRoleQueue();
-		roleQueue.verifyRoleQueueTitle();
-	}
-
-	@Test(priority = 29)
-	public void test30_verifyFiltersOnRoleQueue() {
-		roleQueue.verifyFiltersOnGroupQueue();
-	}
-
-	@Test(priority = 30)
-	public void test31_verifyDefaultValuesOfFiltersOnRoleQueue() {
-		roleQueue.verifyDefaultValueOfFilters();
-	}
-
-	@Test(priority = 31)
-	public void test32_verifyFilterationOnRoleQueue() {
-		roleQueue.selectEntityType();
-		roleQueue.selectStatus();
-		roleQueue.clickFilterBtn();
-	}
-
-	// sorting of columns on My Requests page
-
-	@Test(priority = 32)
-	public void test33_gotoOnMTasks() {
-		myRequests = roleQueue.clickHome();
-		myTask = myRequests.clickMyTasksLink();
-		myTask.verifyMyTaskPage();
-	}
-
-	@Test(priority = 33)
-	public void test34_verifySortedColumnsOnMyTasks() {
-		myTask.clickDueOnIndicator();
-	}
+	// // role queue
+	//
+	// @Test(priority = 28)
+	// public void test29_verifyRoleQueuePageDisplayed() {
+	// myRequests = groupQueue.clickHome();
+	// roleQueue = myRequests.clickRoleQueue();
+	// roleQueue.verifyRoleQueueTitle();
+	// }
+	//
+	// @Test(priority = 29)
+	// public void test30_verifyFiltersOnRoleQueue() {
+	// roleQueue.verifyFiltersOnGroupQueue();
+	// }
+	//
+	// @Test(priority = 30)
+	// public void test31_verifyDefaultValuesOfFiltersOnRoleQueue() {
+	// roleQueue.verifyDefaultValueOfFilters();
+	// }
+	//
+	// @Test(priority = 31)
+	// public void test32_verifyFilterationOnRoleQueue() {
+	// roleQueue.selectEntityType();
+	// roleQueue.selectStatus();
+	// roleQueue.clickFilterBtn();
+	// }
+	//
+	// // sorting of columns on My Requests page
+	//
+	// @Test(priority = 32)
+	// public void test33_gotoOnMTasks() {
+	// myRequests = roleQueue.clickHome();
+	// myTask = myRequests.clickMyTasksLink();
+	// myTask.verifyMyTaskPage();
+	// }
+	//
+	// @Test(priority = 33)
+	// public void test34_verifySortedColumnsOnMyTasks() {
+	// myTask.clickDueOnIndicator();
+	// }
 
 }
