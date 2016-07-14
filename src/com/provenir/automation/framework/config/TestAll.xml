@@ -40,7 +40,6 @@
 		</classes>
 	</test>
 
-	
 <!--
 	<test name="IE Test">
 	<parameter name="browser" value="InternetExplorer" />
