@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="18" total="34" passed="16">
+<testng-results skipped="0" failed="19" total="123" passed="104">
   <reporter-output>
   </reporter-output>
-  <suite name="Automation test suite" duration-ms="657202" started-at="2016-07-12T12:05:12Z" finished-at="2016-07-12T12:16:09Z">
+  <suite name="Automation test suite" duration-ms="1548634" started-at="2016-07-12T13:18:52Z" finished-at="2016-07-12T13:44:41Z">
     <groups>
     </groups>
-    <test name="Firefox Test" duration-ms="657202" started-at="2016-07-12T12:05:12Z" finished-at="2016-07-12T12:16:09Z">
-      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="initialize" is-config="true" duration-ms="55" started-at="2016-07-12T17:35:12Z" finished-at="2016-07-12T17:35:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="beforeTest" is-config="true" duration-ms="13557" started-at="2016-07-12T17:35:12Z" finished-at="2016-07-12T17:35:26Z">
+    <test name="Firefox Test0" duration-ms="174833" started-at="2016-07-12T13:18:52Z" finished-at="2016-07-12T13:21:47Z">
+      <class name="com.provenir.automation.framework.testcases.DefaultRoles">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="beforeTest" is-config="true" duration-ms="27989" started-at="2016-07-12T18:48:52Z" finished-at="2016-07-12T18:49:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="beforeMethod" is-config="true" duration-ms="175" started-at="2016-07-12T17:35:26Z" finished-at="2016-07-12T17:35:26Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="beforeMethod" is-config="true" duration-ms="81" started-at="2016-07-12T18:49:20Z" finished-at="2016-07-12T18:49:21Z">
           <params>
             <param index="0">
               <value>
@@ -26,62 +22,229 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test0_landingPage" duration-ms="26841" started-at="2016-07-12T17:35:26Z" finished-at="2016-07-12T17:35:53Z">
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test0_landingPage" duration-ms="28323" started-at="2016-07-12T18:49:21Z" finished-at="2016-07-12T18:49:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test0_landingPage -->
-        <test-method status="PASS" signature="test1_gotoBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test1_gotoBOAWizard" duration-ms="1608" started-at="2016-07-12T17:35:53Z" finished-at="2016-07-12T17:35:54Z">
+        <test-method status="PASS" signature="test1_verifySalesAdmin()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test1_verifySalesAdmin" duration-ms="5899" started-at="2016-07-12T18:49:49Z" finished-at="2016-07-12T18:49:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test1_gotoBOAWizard -->
-        <test-method status="PASS" signature="test2_verifyManadatoryFieldsOnRequestSummary()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test2_verifyManadatoryFieldsOnRequestSummary" duration-ms="301" started-at="2016-07-12T17:35:54Z" finished-at="2016-07-12T17:35:55Z">
+        </test-method> <!-- test1_verifySalesAdmin -->
+        <test-method status="PASS" signature="test2_verifyLoanOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test2_verifyLoanOfficer" duration-ms="3735" started-at="2016-07-12T18:49:55Z" finished-at="2016-07-12T18:49:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test2_verifyManadatoryFieldsOnRequestSummary -->
-        <test-method status="PASS" signature="test3_saveRequestSummaryInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test3_saveRequestSummaryInformation" duration-ms="19610" started-at="2016-07-12T17:35:55Z" finished-at="2016-07-12T17:36:14Z">
+        </test-method> <!-- test2_verifyLoanOfficer -->
+        <test-method status="PASS" signature="test3_verifySalesManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test3_verifySalesManager" duration-ms="3907" started-at="2016-07-12T18:49:59Z" finished-at="2016-07-12T18:50:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test3_saveRequestSummaryInformation -->
-        <test-method status="PASS" signature="test4_step_verifyAddBtnOnCustInfoPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test4_step_verifyAddBtnOnCustInfoPage" duration-ms="2717" started-at="2016-07-12T17:36:14Z" finished-at="2016-07-12T17:36:17Z">
+        </test-method> <!-- test3_verifySalesManager -->
+        <test-method status="PASS" signature="test4_verifySalesExecutive()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test4_verifySalesExecutive" duration-ms="3830" started-at="2016-07-12T18:50:02Z" finished-at="2016-07-12T18:50:06Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test4_step_verifyAddBtnOnCustInfoPage -->
-        <test-method status="PASS" signature="test5_verifyManadatoryFieldsForBusinessTypCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test5_verifyManadatoryFieldsForBusinessTypCustomer" duration-ms="941" started-at="2016-07-12T17:36:17Z" finished-at="2016-07-12T17:36:18Z">
+        </test-method> <!-- test4_verifySalesExecutive -->
+        <test-method status="PASS" signature="test5_verifyRelationshipManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test5_verifyRelationshipManager" duration-ms="3680" started-at="2016-07-12T18:50:06Z" finished-at="2016-07-12T18:50:10Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test5_verifyManadatoryFieldsForBusinessTypCustomer -->
-        <test-method status="PASS" signature="test6_saveBusinessCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test6_saveBusinessCustDetails" duration-ms="113936" started-at="2016-07-12T17:36:18Z" finished-at="2016-07-12T17:38:12Z">
+        </test-method> <!-- test5_verifyRelationshipManager -->
+        <test-method status="PASS" signature="test6_verifyCreditAdmin()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test6_verifyCreditAdmin" duration-ms="3749" started-at="2016-07-12T18:50:10Z" finished-at="2016-07-12T18:50:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test6_saveBusinessCustDetails -->
-        <test-method status="PASS" signature="test8_verifyManadatoryFieldsForIndividualCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test8_verifyManadatoryFieldsForIndividualCustomer" duration-ms="20160" started-at="2016-07-12T17:38:12Z" finished-at="2016-07-12T17:38:32Z">
+        </test-method> <!-- test6_verifyCreditAdmin -->
+        <test-method status="PASS" signature="test7_verifyCreditAnalyst()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test7_verifyCreditAnalyst" duration-ms="3741" started-at="2016-07-12T18:50:14Z" finished-at="2016-07-12T18:50:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test8_verifyManadatoryFieldsForIndividualCustomer -->
-        <test-method status="FAIL" signature="test9_saveIndividualCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test9_saveIndividualCustDetails" duration-ms="116849" started-at="2016-07-12T17:38:32Z" finished-at="2016-07-12T17:40:29Z">
+        </test-method> <!-- test7_verifyCreditAnalyst -->
+        <test-method status="PASS" signature="test8_verifySrCreditAnalyst()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test8_verifySrCreditAnalyst" duration-ms="3793" started-at="2016-07-12T18:50:17Z" finished-at="2016-07-12T18:50:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_verifySrCreditAnalyst -->
+        <test-method status="PASS" signature="test9_verifyCreditOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test9_verifyCreditOfficer" duration-ms="3698" started-at="2016-07-12T18:50:21Z" finished-at="2016-07-12T18:50:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyCreditOfficer -->
+        <test-method status="PASS" signature="test10_verifySrCreditOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test10_verifySrCreditOfficer" duration-ms="3663" started-at="2016-07-12T18:50:25Z" finished-at="2016-07-12T18:50:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifySrCreditOfficer -->
+        <test-method status="PASS" signature="test11_verifyChiefCreditOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test11_verifyChiefCreditOfficer" duration-ms="3821" started-at="2016-07-12T18:50:29Z" finished-at="2016-07-12T18:50:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_verifyChiefCreditOfficer -->
+        <test-method status="PASS" signature="test12_verifyOperationsManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test12_verifyOperationsManager" duration-ms="3592" started-at="2016-07-12T18:50:32Z" finished-at="2016-07-12T18:50:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_verifyOperationsManager -->
+        <test-method status="PASS" signature="test13_verifyPortfolioManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test13_verifyPortfolioManager" duration-ms="3623" started-at="2016-07-12T18:50:36Z" finished-at="2016-07-12T18:50:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13_verifyPortfolioManager -->
+        <test-method status="PASS" signature="test14_verifyPortfolioAdmin()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test14_verifyPortfolioAdmin" duration-ms="3547" started-at="2016-07-12T18:50:40Z" finished-at="2016-07-12T18:50:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14_verifyPortfolioAdmin -->
+        <test-method status="PASS" signature="test15_verifySecurityOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test15_verifySecurityOfficer" duration-ms="3512" started-at="2016-07-12T18:50:43Z" finished-at="2016-07-12T18:50:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15_verifySecurityOfficer -->
+        <test-method status="PASS" signature="test16_verifyComplianceAnalyst()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test16_verifyComplianceAnalyst" duration-ms="3566" started-at="2016-07-12T18:50:47Z" finished-at="2016-07-12T18:50:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16_verifyComplianceAnalyst -->
+        <test-method status="PASS" signature="test17_verifyDocManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test17_verifyDocManager" duration-ms="3517" started-at="2016-07-12T18:50:50Z" finished-at="2016-07-12T18:50:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17_verifyDocManager -->
+        <test-method status="PASS" signature="test18_verifyDocSpecialist()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test18_verifyDocSpecialist" duration-ms="3523" started-at="2016-07-12T18:50:54Z" finished-at="2016-07-12T18:50:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18_verifyDocSpecialist -->
+        <test-method status="PASS" signature="test19_verifyCollateralManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test19_verifyCollateralManager" duration-ms="3550" started-at="2016-07-12T18:50:57Z" finished-at="2016-07-12T18:51:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test19_verifyCollateralManager -->
+        <test-method status="PASS" signature="test20_verifyCollateralAnalyst()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test20_verifyCollateralAnalyst" duration-ms="3495" started-at="2016-07-12T18:51:01Z" finished-at="2016-07-12T18:51:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test20_verifyCollateralAnalyst -->
+        <test-method status="PASS" signature="test21_verifyUCCSpecialist()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test21_verifyUCCSpecialist" duration-ms="3513" started-at="2016-07-12T18:51:04Z" finished-at="2016-07-12T18:51:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21_verifyUCCSpecialist -->
+        <test-method status="PASS" signature="test22_verifyImagingSpecialist()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test22_verifyImagingSpecialist" duration-ms="3518" started-at="2016-07-12T18:51:08Z" finished-at="2016-07-12T18:51:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22_verifyImagingSpecialist -->
+        <test-method status="PASS" signature="test23_verifyFundingSpecialist()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test23_verifyFundingSpecialist" duration-ms="3494" started-at="2016-07-12T18:51:11Z" finished-at="2016-07-12T18:51:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test23_verifyFundingSpecialist -->
+        <test-method status="PASS" signature="test24_verifyBookingSpecialist()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test24_verifyBookingSpecialist" duration-ms="3544" started-at="2016-07-12T18:51:15Z" finished-at="2016-07-12T18:51:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test24_verifyBookingSpecialist -->
+        <test-method status="PASS" signature="test25_verifyProvenirAdmin()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test25_verifyProvenirAdmin" duration-ms="3749" started-at="2016-07-12T18:51:18Z" finished-at="2016-07-12T18:51:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test25_verifyProvenirAdmin -->
+        <test-method status="PASS" signature="test26_verifyCreditRiskManager()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test26_verifyCreditRiskManager" duration-ms="3586" started-at="2016-07-12T18:51:22Z" finished-at="2016-07-12T18:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test26_verifyCreditRiskManager -->
+        <test-method status="PASS" signature="test27_verifyCompliance()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test27_verifyCompliance" duration-ms="3701" started-at="2016-07-12T18:51:26Z" finished-at="2016-07-12T18:51:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test27_verifyCompliance -->
+        <test-method status="PASS" signature="test28_verifySmallBusinessBankOfficer()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test28_verifySmallBusinessBankOfficer" duration-ms="3511" started-at="2016-07-12T18:51:29Z" finished-at="2016-07-12T18:51:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test28_verifySmallBusinessBankOfficer -->
+        <test-method status="PASS" signature="test29_verifyUnderwriter()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test29_verifyUnderwriter" duration-ms="3636" started-at="2016-07-12T18:51:33Z" finished-at="2016-07-12T18:51:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test29_verifyUnderwriter -->
+        <test-method status="PASS" signature="test30_verifySmallBusinessAnalyst()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test30_verifySmallBusinessAnalyst" duration-ms="3574" started-at="2016-07-12T18:51:37Z" finished-at="2016-07-12T18:51:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test30_verifySmallBusinessAnalyst -->
+        <test-method status="PASS" signature="test31_verifySmallBusinessUnderwriter()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test31_verifySmallBusinessUnderwriter" duration-ms="3524" started-at="2016-07-12T18:51:40Z" finished-at="2016-07-12T18:51:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test31_verifySmallBusinessUnderwriter -->
+        <test-method status="PASS" signature="test32_verifySmallBusinessCloser()[pri:0, instance:com.provenir.automation.framework.testcases.DefaultRoles@47f5d05b]" name="test32_verifySmallBusinessCloser" duration-ms="3604" started-at="2016-07-12T18:51:44Z" finished-at="2016-07-12T18:51:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test32_verifySmallBusinessCloser -->
+      </class> <!-- com.provenir.automation.framework.testcases.DefaultRoles -->
+    </test> <!-- Firefox Test0 -->
+    <test name="Firefox Test1" duration-ms="102427" started-at="2016-07-12T13:21:47Z" finished-at="2016-07-12T13:23:30Z">
+      <class name="com.provenir.automation.framework.testcases.WorkflowsTasks">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="beforeTest" is-config="true" duration-ms="24096" started-at="2016-07-12T18:51:47Z" finished-at="2016-07-12T18:52:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2016-07-12T18:52:11Z" finished-at="2016-07-12T18:52:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test0_landingPage" duration-ms="30862" started-at="2016-07-12T18:52:11Z" finished-at="2016-07-12T18:52:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0_landingPage -->
+        <test-method status="FAIL" signature="test1_verifyWorkflowforSmallBusinessDisplayed()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test1_verifyWorkflowforSmallBusinessDisplayed" duration-ms="5495" started-at="2016-07-12T18:52:42Z" finished-at="2016-07-12T18:52:48Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Workflow for Small Business] but found [* Workflow for Small Business]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Workflow for Small Business] but found [* Workflow for Small Business]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.provenir.automation.framework.testcases.WorkflowsTasks.test1_verifyWorkflowforSmallBusinessDisplayed(WorkflowsTasks.java:57)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_verifyWorkflowforSmallBusinessDisplayed -->
+        <test-method status="PASS" signature="test2_verifyworkflowPageDisplayed()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test2_verifyworkflowPageDisplayed" duration-ms="11879" started-at="2016-07-12T18:52:48Z" finished-at="2016-07-12T18:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_verifyworkflowPageDisplayed -->
+        <test-method status="FAIL" signature="test3_verifyTasks()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test3_verifyTasks" duration-ms="7432" started-at="2016-07-12T18:53:00Z" finished-at="2016-07-12T18:53:07Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='useCurrentCust']/span/span"}
-Command duration or timeout: 239 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'Execute Auto-Decision')]"}
+Command duration or timeout: 5.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=.//*[@id='useCurrentCust']/span/span}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//label[contains(.,'Execute Auto-Decision')]}
+Session ID: aef17bab-d1e1-47cc-a8a8-3d04632c077b
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='useCurrentCust']/span/span"}
-Command duration or timeout: 239 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'Execute Auto-Decision')]"}
+Command duration or timeout: 5.11 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=.//*[@id='useCurrentCust']/span/span}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//label[contains(.,'Execute Auto-Decision')]}
+Session ID: aef17bab-d1e1-47cc-a8a8-3d04632c077b
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -91,8 +254,8 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.provenir.automation.framework.helper.CustomerInfoPage.clickMatchPopup(CustomerInfoPage.java:2724)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test9_saveIndividualCustDetails(StatusUpdate.java:222)
+	at com.provenir.automation.framework.helper.AdminPage.verifyPreAnalysisTasks(AdminPage.java:1668)
+	at com.provenir.automation.framework.testcases.WorkflowsTasks.test3_verifyTasks(WorkflowsTasks.java:72)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -113,77 +276,32 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='useCurrentCust']/span/span"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'Execute Auto-Decision')]"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.FirefoxDriver.prototype.findElement(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10732)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12619)
-	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12561)
-	at <anonymous class>..send(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..ajax(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..domManip/<(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..each(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
-	at <anonymous class>..domManip(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..append(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..registerPlugin/</$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
-	at <anonymous class>..html/<(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..access(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
-	at <anonymous class>..html(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..registerPlugin/</$.fn[n]@http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js(?)
-	at <anonymous class>.$.fn.ajaxSubmit/<(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 > eval:160)
-	at <anonymous class>.$.fn.ajaxSubmit/options.success(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js line 14 > eval:170)
-	at <anonymous class>.jQuery.Callbacks/fire(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
-	at <anonymous class>.jQuery.Callbacks/self.fireWith(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:14)
-	at <anonymous class>.done(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
-	at <anonymous class>..send/callback(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/yuiDir/js/yuiGlobal-min.js:21)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous1372605554330855713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous1372605554330855713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test9_saveIndividualCustDetails -->
-        <test-method status="PASS" signature="test10_verifyCollateralInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test10_verifyCollateralInformationPage" duration-ms="11456" started-at="2016-07-12T17:40:29Z" finished-at="2016-07-12T17:40:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test10_verifyCollateralInformationPage -->
-        <test-method status="PASS" signature="test11_verifyAddNewBtnOnCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test11_verifyAddNewBtnOnCollateralInformation" duration-ms="3036" started-at="2016-07-12T17:40:40Z" finished-at="2016-07-12T17:40:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test11_verifyAddNewBtnOnCollateralInformation -->
-        <test-method status="FAIL" signature="test12_saveCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test12_saveCollateralInformation" duration-ms="13927" started-at="2016-07-12T17:40:43Z" finished-at="2016-07-12T17:40:57Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- test3_verifyTasks -->
+        <test-method status="FAIL" signature="test4_verifyNewRequestForMoney()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test4_verifyNewRequestForMoney" duration-ms="5699" started-at="2016-07-12T18:53:07Z" finished-at="2016-07-12T18:53:13Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Element is not clickable at point (444, 439.20001220703125). Other element would receive the click: <td class="topGap topGap" valign="top"></td>
-Command duration or timeout: 72 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
+              <![CDATA[expected [* New Request for Money] but found [New Request for Money]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (444, 439.20001220703125). Other element would receive the click: <td class="topGap topGap" valign="top"></td>
-Command duration or timeout: 72 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.provenir.automation.framework.helper.CollateralInfoPage.selectCollType(CollateralInfoPage.java:481)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test12_saveCollateralInformation(StatusUpdate.java:252)
+              <![CDATA[java.lang.AssertionError: expected [* New Request for Money] but found [New Request for Money]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at com.provenir.automation.framework.testcases.WorkflowsTasks.test4_verifyNewRequestForMoney(WorkflowsTasks.java:88)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -206,31 +324,242 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.lang.Thread.run(Unknown Source)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test12_saveCollateralInformation -->
-        <test-method status="PASS" signature="test13_verifyTransactionInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test13_verifyTransactionInformationPage" duration-ms="10366" started-at="2016-07-12T17:40:57Z" finished-at="2016-07-12T17:41:08Z">
+        </test-method> <!-- test4_verifyNewRequestForMoney -->
+        <test-method status="PASS" signature="test5_verifyworkflowPageDisplayed()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test5_verifyworkflowPageDisplayed" duration-ms="9180" started-at="2016-07-12T18:53:13Z" finished-at="2016-07-12T18:53:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test13_verifyTransactionInformationPage -->
-        <test-method status="FAIL" signature="test14_saveTransactionDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test14_saveTransactionDetails" duration-ms="3508" started-at="2016-07-12T17:41:08Z" finished-at="2016-07-12T17:41:11Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        </test-method> <!-- test5_verifyworkflowPageDisplayed -->
+        <test-method status="FAIL" signature="test6_verifyTasksForNewRequestForMoney()[pri:0, instance:com.provenir.automation.framework.testcases.WorkflowsTasks@3490b317]" name="test6_verifyTasksForNewRequestForMoney" duration-ms="7757" started-at="2016-07-12T18:53:22Z" finished-at="2016-07-12T18:53:30Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is not clickable at point (446, 534.2000122070312). Other element would receive the click: <div class="screenoverlay" style="height: 1013px; z-index: 1002;"></div>
-Command duration or timeout: 76 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'OFAC')]"}
+Command duration or timeout: 5.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//label[contains(.,'OFAC')]}
+Session ID: aef17bab-d1e1-47cc-a8a8-3d04632c077b
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (446, 534.2000122070312). Other element would receive the click: <div class="screenoverlay" style="height: 1013px; z-index: 1002;"></div>
-Command duration or timeout: 76 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'OFAC')]"}
+Command duration or timeout: 5.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//label[contains(.,'OFAC')]}
+Session ID: aef17bab-d1e1-47cc-a8a8-3d04632c077b
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.AdminPage.verifyCompliance(AdminPage.java:1820)
+	at com.provenir.automation.framework.testcases.WorkflowsTasks.test6_verifyTasksForNewRequestForMoney(WorkflowsTasks.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//label[contains(.,'OFAC')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous1372605554330855713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous1372605554330855713webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_verifyTasksForNewRequestForMoney -->
+      </class> <!-- com.provenir.automation.framework.testcases.WorkflowsTasks -->
+    </test> <!-- Firefox Test1 -->
+    <test name="Firefox Test2" duration-ms="100162" started-at="2016-07-12T13:23:30Z" finished-at="2016-07-12T13:25:10Z">
+      <class name="com.provenir.automation.framework.testcases.Checklists">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="beforeTest" is-config="true" duration-ms="23030" started-at="2016-07-12T18:53:30Z" finished-at="2016-07-12T18:53:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="beforeMethod" is-config="true" duration-ms="16" started-at="2016-07-12T18:53:53Z" finished-at="2016-07-12T18:53:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test0_landingPage" duration-ms="27740" started-at="2016-07-12T18:53:53Z" finished-at="2016-07-12T18:54:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0_landingPage -->
+        <test-method status="PASS" signature="test1_verifyEligibilityChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test1_verifyEligibilityChecklist" duration-ms="5943" started-at="2016-07-12T18:54:21Z" finished-at="2016-07-12T18:54:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_verifyEligibilityChecklist -->
+        <test-method status="PASS" signature="test2_verifyPolicyExceptionForSmallBusiness()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test2_verifyPolicyExceptionForSmallBusiness" duration-ms="3389" started-at="2016-07-12T18:54:27Z" finished-at="2016-07-12T18:54:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_verifyPolicyExceptionForSmallBusiness -->
+        <test-method status="PASS" signature="test3_verifyConditionsAndPrecedent()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test3_verifyConditionsAndPrecedent" duration-ms="3147" started-at="2016-07-12T18:54:30Z" finished-at="2016-07-12T18:54:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_verifyConditionsAndPrecedent -->
+        <test-method status="PASS" signature="test4_verifyClosingChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test4_verifyClosingChecklist" duration-ms="3312" started-at="2016-07-12T18:54:33Z" finished-at="2016-07-12T18:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_verifyClosingChecklist -->
+        <test-method status="PASS" signature="test5_verifyPostBookingQAChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test5_verifyPostBookingQAChecklist" duration-ms="3132" started-at="2016-07-12T18:54:36Z" finished-at="2016-07-12T18:54:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_verifyPostBookingQAChecklist -->
+        <test-method status="PASS" signature="test6_verifyPreBookingChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test6_verifyPreBookingChecklist" duration-ms="3131" started-at="2016-07-12T18:54:40Z" finished-at="2016-07-12T18:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_verifyPreBookingChecklist -->
+        <test-method status="PASS" signature="test7_verifyPreFundingChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test7_verifyPreFundingChecklist" duration-ms="3056" started-at="2016-07-12T18:54:43Z" finished-at="2016-07-12T18:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7_verifyPreFundingChecklist -->
+        <test-method status="PASS" signature="test8_verifyPreClosingChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test8_verifyPreClosingChecklist" duration-ms="3074" started-at="2016-07-12T18:54:46Z" finished-at="2016-07-12T18:54:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_verifyPreClosingChecklist -->
+        <test-method status="PASS" signature="test9_verifyDocumentChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test9_verifyDocumentChecklist" duration-ms="3089" started-at="2016-07-12T18:54:49Z" finished-at="2016-07-12T18:54:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyDocumentChecklist -->
+        <test-method status="PASS" signature="test10_verifyDueDiligenceChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test10_verifyDueDiligenceChecklist" duration-ms="3044" started-at="2016-07-12T18:54:52Z" finished-at="2016-07-12T18:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifyDueDiligenceChecklist -->
+        <test-method status="PASS" signature="test11_verifyApplicationChecklist()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test11_verifyApplicationChecklist" duration-ms="3256" started-at="2016-07-12T18:54:55Z" finished-at="2016-07-12T18:54:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_verifyApplicationChecklist -->
+        <test-method status="PASS" signature="test12_verifyApplicationChecklistItems()[pri:0, instance:com.provenir.automation.framework.testcases.Checklists@4f1fc720]" name="test12_verifyApplicationChecklistItems" duration-ms="11794" started-at="2016-07-12T18:54:58Z" finished-at="2016-07-12T18:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_verifyApplicationChecklistItems -->
+      </class> <!-- com.provenir.automation.framework.testcases.Checklists -->
+    </test> <!-- Firefox Test2 -->
+    <test name="Firefox Test3" duration-ms="388987" started-at="2016-07-12T13:25:10Z" finished-at="2016-07-12T13:31:39Z">
+      <class name="com.provenir.automation.framework.testcases.BOA_Wizard">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="beforeTest" is-config="true" duration-ms="23969" started-at="2016-07-12T18:55:10Z" finished-at="2016-07-12T18:55:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="beforeMethod" is-config="true" duration-ms="83" started-at="2016-07-12T18:55:34Z" finished-at="2016-07-12T18:55:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test0_landingPage" duration-ms="23012" started-at="2016-07-12T18:55:34Z" finished-at="2016-07-12T18:55:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0_landingPage -->
+        <test-method status="PASS" signature="test1_gotoBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test1_gotoBOAWizard" duration-ms="1027" started-at="2016-07-12T18:55:57Z" finished-at="2016-07-12T18:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_gotoBOAWizard -->
+        <test-method status="PASS" signature="test2_verifyManadatoryFieldsOnRequestSummary()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test2_verifyManadatoryFieldsOnRequestSummary" duration-ms="284" started-at="2016-07-12T18:55:58Z" finished-at="2016-07-12T18:55:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_verifyManadatoryFieldsOnRequestSummary -->
+        <test-method status="PASS" signature="test3_saveRequestSummaryInformation()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test3_saveRequestSummaryInformation" duration-ms="14728" started-at="2016-07-12T18:55:58Z" finished-at="2016-07-12T18:56:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_saveRequestSummaryInformation -->
+        <test-method status="PASS" signature="test4_step_verifyAddBtnOnCustInfoPage()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test4_step_verifyAddBtnOnCustInfoPage" duration-ms="1417" started-at="2016-07-12T18:56:13Z" finished-at="2016-07-12T18:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_step_verifyAddBtnOnCustInfoPage -->
+        <test-method status="PASS" signature="test5_verifyManadatoryFieldsForBusinessTypCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test5_verifyManadatoryFieldsForBusinessTypCustomer" duration-ms="910" started-at="2016-07-12T18:56:15Z" finished-at="2016-07-12T18:56:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_verifyManadatoryFieldsForBusinessTypCustomer -->
+        <test-method status="PASS" signature="test6_saveBusinessCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test6_saveBusinessCustDetails" duration-ms="61608" started-at="2016-07-12T18:56:15Z" finished-at="2016-07-12T18:57:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_saveBusinessCustDetails -->
+        <test-method status="PASS" signature="test8_verifyManadatoryFieldsForIndividualCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test8_verifyManadatoryFieldsForIndividualCustomer" duration-ms="18047" started-at="2016-07-12T18:57:17Z" finished-at="2016-07-12T18:57:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_verifyManadatoryFieldsForIndividualCustomer -->
+        <test-method status="PASS" signature="test9_saveIndividualCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test9_saveIndividualCustDetails" duration-ms="70102" started-at="2016-07-12T18:57:35Z" finished-at="2016-07-12T18:58:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_saveIndividualCustDetails -->
+        <test-method status="PASS" signature="test10_verifyCollateralInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test10_verifyCollateralInformationPage" duration-ms="6488" started-at="2016-07-12T18:58:45Z" finished-at="2016-07-12T18:58:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifyCollateralInformationPage -->
+        <test-method status="PASS" signature="test11_verifyAddNewBtnOnCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test11_verifyAddNewBtnOnCollateralInformation" duration-ms="2296" started-at="2016-07-12T18:58:52Z" finished-at="2016-07-12T18:58:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_verifyAddNewBtnOnCollateralInformation -->
+        <test-method status="PASS" signature="test12_saveCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test12_saveCollateralInformation" duration-ms="50581" started-at="2016-07-12T18:58:54Z" finished-at="2016-07-12T18:59:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_saveCollateralInformation -->
+        <test-method status="PASS" signature="test13_verifyTransactionInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test13_verifyTransactionInformationPage" duration-ms="21298" started-at="2016-07-12T18:59:45Z" finished-at="2016-07-12T19:00:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13_verifyTransactionInformationPage -->
+        <test-method status="FAIL" signature="test14_saveTransactionDetails()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test14_saveTransactionDetails" duration-ms="29358" started-at="2016-07-12T19:00:06Z" finished-at="2016-07-12T19:00:35Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (301.70001220703125, 731.7000122070312). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0; cursor: default; position: fixed;"></div>
+Command duration or timeout: 72 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: f3e5368b-ca76-4217-ade1-230a98cf0322
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (301.70001220703125, 731.7000122070312). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0; cursor: default; position: fixed;"></div>
+Command duration or timeout: 72 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: f3e5368b-ca76-4217-ade1-230a98cf0322
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -242,8 +571,8 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.provenir.automation.framework.helper.TransactionInfoPage.selectFacilityType(TransactionInfoPage.java:172)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test14_saveTransactionDetails(StatusUpdate.java:286)
+	at com.provenir.automation.framework.helper.TransactionInfoPage.selBorrowerOnTransactionInformation(TransactionInfoPage.java:682)
+	at com.provenir.automation.framework.testcases.BOA_Wizard.test14_saveTransactionDetails(BOA_Wizard.java:291)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -270,118 +599,117 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test14_saveTransactionDetails -->
-        <test-method status="PASS" signature="test16_verifyAdditionalInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test16_verifyAdditionalInformation" duration-ms="5226" started-at="2016-07-12T17:41:11Z" finished-at="2016-07-12T17:41:17Z">
+        <test-method status="PASS" signature="test16_verifyAdditionalInformation()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test16_verifyAdditionalInformation" duration-ms="1330" started-at="2016-07-12T19:00:35Z" finished-at="2016-07-12T19:00:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test16_verifyAdditionalInformation -->
-        <test-method status="PASS" signature="test17_verifySummaryOfApplicationTitle()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test17_verifySummaryOfApplicationTitle" duration-ms="4639" started-at="2016-07-12T17:41:17Z" finished-at="2016-07-12T17:41:21Z">
+        <test-method status="PASS" signature="test18_verifySummaryOfApplicationTitle()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test18_verifySummaryOfApplicationTitle" duration-ms="1597" started-at="2016-07-12T19:00:37Z" finished-at="2016-07-12T19:00:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test17_verifySummaryOfApplicationTitle -->
-        <test-method status="PASS" signature="test18_clickSubmitOnLastStepOfBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test18_clickSubmitOnLastStepOfBOAWizard" duration-ms="141923" started-at="2016-07-12T17:41:21Z" finished-at="2016-07-12T17:43:43Z">
+        </test-method> <!-- test18_verifySummaryOfApplicationTitle -->
+        <test-method status="PASS" signature="test19_clickSubmitOnLastStepOfBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test19_clickSubmitOnLastStepOfBOAWizard" duration-ms="58557" started-at="2016-07-12T19:00:38Z" finished-at="2016-07-12T19:01:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test18_clickSubmitOnLastStepOfBOAWizard -->
-        <test-method status="PASS" signature="test19_verifyReqOnDashboard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test19_verifyReqOnDashboard" duration-ms="4805" started-at="2016-07-12T17:43:43Z" finished-at="2016-07-12T17:43:48Z">
+        </test-method> <!-- test19_clickSubmitOnLastStepOfBOAWizard -->
+        <test-method status="PASS" signature="test20_verifyReqOnDashboard()[pri:0, instance:com.provenir.automation.framework.testcases.BOA_Wizard@2958f444]" name="test20_verifyReqOnDashboard" duration-ms="2279" started-at="2016-07-12T19:01:37Z" finished-at="2016-07-12T19:01:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test19_verifyReqOnDashboard -->
-        <test-method status="PASS" signature="test20_verifyCredit360Page()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test20_verifyCredit360Page" duration-ms="21198" started-at="2016-07-12T17:43:48Z" finished-at="2016-07-12T17:44:09Z">
+        </test-method> <!-- test20_verifyReqOnDashboard -->
+      </class> <!-- com.provenir.automation.framework.testcases.BOA_Wizard -->
+    </test> <!-- Firefox Test3 -->
+    <test name="Firefox Test4" duration-ms="175516" started-at="2016-07-12T13:31:39Z" finished-at="2016-07-12T13:34:35Z">
+      <class name="com.provenir.automation.framework.testcases.RegB">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="beforeTest" is-config="true" duration-ms="24763" started-at="2016-07-12T19:01:39Z" finished-at="2016-07-12T19:02:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test20_verifyCredit360Page -->
-        <test-method status="FAIL" signature="test21_verifyCreditStatusAsSubmitted()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test21_verifyCreditStatusAsSubmitted" duration-ms="7041" started-at="2016-07-12T17:44:09Z" finished-at="2016-07-12T17:44:16Z">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="beforeMethod" is-config="true" duration-ms="49" started-at="2016-07-12T19:02:04Z" finished-at="2016-07-12T19:02:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test0_landingPage" duration-ms="21481" started-at="2016-07-12T19:02:04Z" finished-at="2016-07-12T19:02:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0_landingPage -->
+        <test-method status="PASS" signature="test1_gotoBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test1_gotoBOAWizard" duration-ms="1034" started-at="2016-07-12T19:02:25Z" finished-at="2016-07-12T19:02:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_gotoBOAWizard -->
+        <test-method status="PASS" signature="test2_verifyManadatoryFieldsOnRequestSummary()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test2_verifyManadatoryFieldsOnRequestSummary" duration-ms="344" started-at="2016-07-12T19:02:26Z" finished-at="2016-07-12T19:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_verifyManadatoryFieldsOnRequestSummary -->
+        <test-method status="PASS" signature="test3_saveRequestSummaryInformation()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test3_saveRequestSummaryInformation" duration-ms="16190" started-at="2016-07-12T19:02:27Z" finished-at="2016-07-12T19:02:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_saveRequestSummaryInformation -->
+        <test-method status="PASS" signature="test4_verifyCollateralInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test4_verifyCollateralInformationPage" duration-ms="6629" started-at="2016-07-12T19:02:43Z" finished-at="2016-07-12T19:02:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_verifyCollateralInformationPage -->
+        <test-method status="PASS" signature="test5_verifyTransactionInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test5_verifyTransactionInformationPage" duration-ms="6512" started-at="2016-07-12T19:02:50Z" finished-at="2016-07-12T19:02:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_verifyTransactionInformationPage -->
+        <test-method status="PASS" signature="test6_verifyAdditionalInformation()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test6_verifyAdditionalInformation" duration-ms="1287" started-at="2016-07-12T19:02:56Z" finished-at="2016-07-12T19:02:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_verifyAdditionalInformation -->
+        <test-method status="PASS" signature="test7_verifySummaryOfApplicationTitle()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test7_verifySummaryOfApplicationTitle" duration-ms="1447" started-at="2016-07-12T19:02:57Z" finished-at="2016-07-12T19:02:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test7_verifySummaryOfApplicationTitle -->
+        <test-method status="PASS" signature="test8_clickSubmitOnLastStepOfBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test8_clickSubmitOnLastStepOfBOAWizard" duration-ms="50571" started-at="2016-07-12T19:02:59Z" finished-at="2016-07-12T19:03:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_clickSubmitOnLastStepOfBOAWizard -->
+        <test-method status="PASS" signature="test9_verifyReqOnDashboard()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test9_verifyReqOnDashboard" duration-ms="1706" started-at="2016-07-12T19:03:49Z" finished-at="2016-07-12T19:03:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_verifyReqOnDashboard -->
+        <test-method status="PASS" signature="test10_verifyCredit360Page()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test10_verifyCredit360Page" duration-ms="8902" started-at="2016-07-12T19:03:51Z" finished-at="2016-07-12T19:04:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifyCredit360Page -->
+        <test-method status="PASS" signature="test11_gotoRegB()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test11_gotoRegB" duration-ms="2985" started-at="2016-07-12T19:04:00Z" finished-at="2016-07-12T19:04:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_gotoRegB -->
+        <test-method status="PASS" signature="test12_verifyRegBStartDate()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test12_verifyRegBStartDate" duration-ms="951" started-at="2016-07-12T19:04:03Z" finished-at="2016-07-12T19:04:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_verifyRegBStartDate -->
+        <test-method status="FAIL" signature="test13_completeTasksOnTaskManagement()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test13_completeTasksOnTaskManagement" duration-ms="20158" started-at="2016-07-12T19:04:04Z" finished-at="2016-07-12T19:04:24Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]"}
-Command duration or timeout: 5.02 seconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//li[contains(.,'Abby Lockhart [alockhart]')]"}
+Command duration or timeout: 5.14 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//li[contains(.,'Abby Lockhart [alockhart]')]}
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]"}
-Command duration or timeout: 5.02 seconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//li[contains(.,'Abby Lockhart [alockhart]')]"}
+Command duration or timeout: 5.14 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=//li[contains(.,'Abby Lockhart [alockhart]')]}
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at com.provenir.automation.framework.helper.Credit360Helper.verifySubmitted(Credit360Helper.java:766)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test21_verifyCreditStatusAsSubmitted(StatusUpdate.java:340)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Submitted')]"}
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test21_verifyCreditStatusAsSubmitted -->
-        <test-method status="FAIL" signature="test22_completePreAnalysis()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test22_completePreAnalysis" duration-ms="23497" started-at="2016-07-12T17:44:16Z" finished-at="2016-07-12T17:44:40Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id='taskAssigee']/input"}
-Command duration or timeout: 5.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=//*[@id='taskAssigee']/input}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='taskAssigee']/input"}
-Command duration or timeout: 5.10 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-*** Element info: {Using=xpath, value=//*[@id='taskAssigee']/input}
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.GeneratedConstructorAccessor14.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
@@ -401,8 +729,8 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at com.google.common.collect.Lists.newArrayList(Lists.java:160)
 	at com.google.common.collect.Lists.newArrayList(Lists.java:144)
 	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:572)
-	at com.provenir.automation.framework.helper.Credit360Helper.enterAssignedUser(Credit360Helper.java:438)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test22_completePreAnalysis(StatusUpdate.java:351)
+	at com.provenir.automation.framework.helper.Credit360Helper.enterAssignedUser(Credit360Helper.java:443)
+	at com.provenir.automation.framework.testcases.RegB.test13_completeTasksOnTaskManagement(RegB.java:187)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -423,36 +751,36 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//*[@id='taskAssigee']/input"}
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"//li[contains(.,'Abby Lockhart [alockhart]')]"}
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous7924758254751600466webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous7924758254751600466webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test22_completePreAnalysis -->
-        <test-method status="FAIL" signature="test23_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test23_refreshPage" duration-ms="7263" started-at="2016-07-12T17:44:40Z" finished-at="2016-07-12T17:44:47Z">
+        </test-method> <!-- test13_completeTasksOnTaskManagement -->
+        <test-method status="FAIL" signature="test14_completeTaskOfPolicyException()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test14_completeTaskOfPolicyException" duration-ms="146" started-at="2016-07-12T19:04:24Z" finished-at="2016-07-12T19:04:24Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 70 milliseconds
+              <![CDATA[Element is not clickable at point (244, 174.10000610351562). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 76 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 70 milliseconds
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (244, 174.10000610351562). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 76 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -464,14 +792,13 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test23_refreshPage(StatusUpdate.java:365)
+	at com.provenir.automation.framework.helper.Credit360Helper.expandDecision(Credit360Helper.java:695)
+	at com.provenir.automation.framework.testcases.RegB.test14_completeTaskOfPolicyException(RegB.java:202)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -495,45 +822,367 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14_completeTaskOfPolicyException -->
+        <test-method status="FAIL" signature="test15_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test15_refreshPage" duration-ms="7129" started-at="2016-07-12T19:04:24Z" finished-at="2016-07-12T19:04:31Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 64 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 64 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
+	at com.provenir.automation.framework.testcases.RegB.test15_refreshPage(RegB.java:215)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test15_refreshPage -->
+        <test-method status="FAIL" signature="test16_gotoRegBSection()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test16_gotoRegBSection" duration-ms="3161" started-at="2016-07-12T19:04:31Z" finished-at="2016-07-12T19:04:35Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (95, 511). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 511). Other element would receive the click: <div class="screenoverlay" style="height: 3058px; z-index: 1002;"></div>
+Command duration or timeout: 67 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: bfd22369-51dd-4d9f-ad79-16d476222592
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy9.click(Unknown Source)
+	at com.provenir.automation.framework.helper.Credit360Helper.clickRegB(Credit360Helper.java:723)
+	at com.provenir.automation.framework.testcases.RegB.test16_gotoRegBSection(RegB.java:225)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16_gotoRegBSection -->
+        <test-method status="FAIL" signature="test17_verifyRegBStartDate()[pri:0, instance:com.provenir.automation.framework.testcases.RegB@1bbe7ff5]" name="test17_verifyRegBStartDate" duration-ms="43" started-at="2016-07-12T19:04:35Z" finished-at="2016-07-12T19:04:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.provenir.automation.framework.testcases.RegB.test17_verifyRegBStartDate(RegB.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17_verifyRegBStartDate -->
+      </class> <!-- com.provenir.automation.framework.testcases.RegB -->
+    </test> <!-- Firefox Test4 -->
+    <test name="Firefox Test5" duration-ms="606508" started-at="2016-07-12T13:34:35Z" finished-at="2016-07-12T13:44:41Z">
+      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="initialize" is-config="true" duration-ms="59" started-at="2016-07-12T18:48:52Z" finished-at="2016-07-12T18:48:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="beforeTest" is-config="true" duration-ms="23737" started-at="2016-07-12T19:04:35Z" finished-at="2016-07-12T19:04:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="beforeMethod" is-config="true" duration-ms="32" started-at="2016-07-12T19:04:58Z" finished-at="2016-07-12T19:04:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test0_landingPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test0_landingPage" duration-ms="22964" started-at="2016-07-12T19:04:58Z" finished-at="2016-07-12T19:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0_landingPage -->
+        <test-method status="PASS" signature="test1_gotoBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test1_gotoBOAWizard" duration-ms="1042" started-at="2016-07-12T19:05:21Z" finished-at="2016-07-12T19:05:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_gotoBOAWizard -->
+        <test-method status="PASS" signature="test2_verifyManadatoryFieldsOnRequestSummary()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test2_verifyManadatoryFieldsOnRequestSummary" duration-ms="302" started-at="2016-07-12T19:05:22Z" finished-at="2016-07-12T19:05:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2_verifyManadatoryFieldsOnRequestSummary -->
+        <test-method status="PASS" signature="test3_saveRequestSummaryInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test3_saveRequestSummaryInformation" duration-ms="14924" started-at="2016-07-12T19:05:23Z" finished-at="2016-07-12T19:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_saveRequestSummaryInformation -->
+        <test-method status="PASS" signature="test4_step_verifyAddBtnOnCustInfoPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test4_step_verifyAddBtnOnCustInfoPage" duration-ms="1778" started-at="2016-07-12T19:05:38Z" finished-at="2016-07-12T19:05:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_step_verifyAddBtnOnCustInfoPage -->
+        <test-method status="PASS" signature="test5_verifyManadatoryFieldsForBusinessTypCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test5_verifyManadatoryFieldsForBusinessTypCustomer" duration-ms="934" started-at="2016-07-12T19:05:39Z" finished-at="2016-07-12T19:05:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5_verifyManadatoryFieldsForBusinessTypCustomer -->
+        <test-method status="PASS" signature="test6_saveBusinessCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test6_saveBusinessCustDetails" duration-ms="61660" started-at="2016-07-12T19:05:40Z" finished-at="2016-07-12T19:06:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test6_saveBusinessCustDetails -->
+        <test-method status="PASS" signature="test8_verifyManadatoryFieldsForIndividualCustomer()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test8_verifyManadatoryFieldsForIndividualCustomer" duration-ms="18254" started-at="2016-07-12T19:06:42Z" finished-at="2016-07-12T19:07:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test8_verifyManadatoryFieldsForIndividualCustomer -->
+        <test-method status="PASS" signature="test9_saveIndividualCustDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test9_saveIndividualCustDetails" duration-ms="71141" started-at="2016-07-12T19:07:00Z" finished-at="2016-07-12T19:08:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test9_saveIndividualCustDetails -->
+        <test-method status="PASS" signature="test10_verifyCollateralInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test10_verifyCollateralInformationPage" duration-ms="6516" started-at="2016-07-12T19:08:11Z" finished-at="2016-07-12T19:08:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test10_verifyCollateralInformationPage -->
+        <test-method status="PASS" signature="test11_verifyAddNewBtnOnCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test11_verifyAddNewBtnOnCollateralInformation" duration-ms="2155" started-at="2016-07-12T19:08:18Z" finished-at="2016-07-12T19:08:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test11_verifyAddNewBtnOnCollateralInformation -->
+        <test-method status="PASS" signature="test12_saveCollateralInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test12_saveCollateralInformation" duration-ms="49985" started-at="2016-07-12T19:08:20Z" finished-at="2016-07-12T19:09:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test12_saveCollateralInformation -->
+        <test-method status="PASS" signature="test13_verifyTransactionInformationPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test13_verifyTransactionInformationPage" duration-ms="20377" started-at="2016-07-12T19:09:10Z" finished-at="2016-07-12T19:09:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test13_verifyTransactionInformationPage -->
+        <test-method status="FAIL" signature="test14_saveTransactionDetails()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test14_saveTransactionDetails" duration-ms="32301" started-at="2016-07-12T19:09:30Z" finished-at="2016-07-12T19:10:03Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Element is not clickable at point (1001.38330078125, 706.2000122070312). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0; cursor: default; position: fixed;"></div>
+Command duration or timeout: 77 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (1001.38330078125, 706.2000122070312). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: medium none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(0, 0, 0); opacity: 0; cursor: default; position: fixed;"></div>
+Command duration or timeout: 77 milliseconds
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at com.provenir.automation.framework.helper.TransactionInfoPage.selRelationshipTyp(TransactionInfoPage.java:694)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test14_saveTransactionDetails(StatusUpdate.java:295)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test14_saveTransactionDetails -->
+        <test-method status="PASS" signature="test16_verifyAdditionalInformation()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test16_verifyAdditionalInformation" duration-ms="1468" started-at="2016-07-12T19:10:03Z" finished-at="2016-07-12T19:10:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test16_verifyAdditionalInformation -->
+        <test-method status="PASS" signature="test17_verifySummaryOfApplicationTitle()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test17_verifySummaryOfApplicationTitle" duration-ms="1645" started-at="2016-07-12T19:10:04Z" finished-at="2016-07-12T19:10:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test17_verifySummaryOfApplicationTitle -->
+        <test-method status="PASS" signature="test18_clickSubmitOnLastStepOfBOAWizard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test18_clickSubmitOnLastStepOfBOAWizard" duration-ms="50770" started-at="2016-07-12T19:10:06Z" finished-at="2016-07-12T19:10:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test18_clickSubmitOnLastStepOfBOAWizard -->
+        <test-method status="PASS" signature="test19_verifyReqOnDashboard()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test19_verifyReqOnDashboard" duration-ms="1817" started-at="2016-07-12T19:10:57Z" finished-at="2016-07-12T19:10:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test19_verifyReqOnDashboard -->
+        <test-method status="PASS" signature="test20_verifyCredit360Page()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test20_verifyCredit360Page" duration-ms="12154" started-at="2016-07-12T19:10:58Z" finished-at="2016-07-12T19:11:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test20_verifyCredit360Page -->
+        <test-method status="PASS" signature="test21_verifyCreditStatusAsSubmitted()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test21_verifyCreditStatusAsSubmitted" duration-ms="2060" started-at="2016-07-12T19:11:11Z" finished-at="2016-07-12T19:11:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test21_verifyCreditStatusAsSubmitted -->
+        <test-method status="PASS" signature="test22_completePreAnalysis()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test22_completePreAnalysis" duration-ms="43589" started-at="2016-07-12T19:11:13Z" finished-at="2016-07-12T19:11:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test22_completePreAnalysis -->
+        <test-method status="PASS" signature="test23_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test23_refreshPage" duration-ms="18083" started-at="2016-07-12T19:11:56Z" finished-at="2016-07-12T19:12:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test23_refreshPage -->
-        <test-method status="FAIL" signature="test24_verifyCreditStatusAsCreditDecisioning()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test24_verifyCreditStatusAsCreditDecisioning" duration-ms="3158" started-at="2016-07-12T17:44:47Z" finished-at="2016-07-12T17:44:50Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="test24_verifyCreditStatusAsCreditDecisioning()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test24_verifyCreditStatusAsCreditDecisioning" duration-ms="8661" started-at="2016-07-12T19:12:14Z" finished-at="2016-07-12T19:12:23Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 66 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+Command duration or timeout: 5.16 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 66 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+Command duration or timeout: 5.16 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test24_verifyCreditStatusAsCreditDecisioning(StatusUpdate.java:376)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifyReqStatus(Credit360Helper.java:781)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test24_verifyCreditStatusAsCreditDecisioning(StatusUpdate.java:377)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -554,174 +1203,62 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test24_verifyCreditStatusAsCreditDecisioning -->
-        <test-method status="FAIL" signature="test25_completeDecision()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test25_completeDecision" duration-ms="9493" started-at="2016-07-12T17:44:50Z" finished-at="2016-07-12T17:45:00Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
-            <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.09 seconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.09 seconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickWflwNm(Credit360Helper.java:688)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test25_completeDecision(StatusUpdate.java:385)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test24_verifyCreditStatusAsCreditDecisioning -->
+        <test-method status="PASS" signature="test25_completeDecision()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test25_completeDecision" duration-ms="43298" started-at="2016-07-12T19:12:23Z" finished-at="2016-07-12T19:13:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test25_completeDecision -->
-        <test-method status="FAIL" signature="test26_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test26_refreshPage" duration-ms="7297" started-at="2016-07-12T17:45:00Z" finished-at="2016-07-12T17:45:07Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 90 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 90 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test26_refreshPage(StatusUpdate.java:406)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="test26_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test26_refreshPage" duration-ms="18364" started-at="2016-07-12T19:13:06Z" finished-at="2016-07-12T19:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test26_refreshPage -->
-        <test-method status="FAIL" signature="test27_verifyCreditStatus()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test27_verifyCreditStatus" duration-ms="2183" started-at="2016-07-12T17:45:07Z" finished-at="2016-07-12T17:45:09Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="test27_verifyCreditStatus()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test27_verifyCreditStatus" duration-ms="7935" started-at="2016-07-12T19:13:25Z" finished-at="2016-07-12T19:13:33Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 70 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+Command duration or timeout: 5.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 70 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+Command duration or timeout: 5.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test27_verifyCreditStatus(StatusUpdate.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifyReqStatus(Credit360Helper.java:781)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test27_verifyCreditStatus(StatusUpdate.java:417)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -742,29 +1279,36 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Credit Decisioning')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test27_verifyCreditStatus -->
-        <test-method status="FAIL" signature="test28_completeCustomerAcceptance()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test28_completeCustomerAcceptance" duration-ms="5222" started-at="2016-07-12T17:45:09Z" finished-at="2016-07-12T17:45:14Z">
+        <test-method status="FAIL" signature="test28_completeCustomerAcceptance()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test28_completeCustomerAcceptance" duration-ms="7415" started-at="2016-07-12T19:13:33Z" finished-at="2016-07-12T19:13:40Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[argumen5ts is not defined
-Command duration or timeout: 13 milliseconds
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: argumen5ts is not defined
-Command duration or timeout: 13 milliseconds
+Command duration or timeout: 11 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -801,31 +1345,31 @@ Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.anonymous(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A line 69 > Function:1)
-	at <anonymous class>.handleEvaluateEvent(http://provappsvpcqa01.provapps.com:6080/ProvAppCLWeb/;jsessionid=DF1F73A6C948DBE4C036B968D023621A:69)
+	at <anonymous class>.anonymous(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp line 69 > Function:1)
+	at <anonymous class>.handleEvaluateEvent(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp:69)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test28_completeCustomerAcceptance -->
-        <test-method status="FAIL" signature="test29_completeChildTaskOfCustomerAcceptance()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test29_completeChildTaskOfCustomerAcceptance" duration-ms="163" started-at="2016-07-12T17:45:14Z" finished-at="2016-07-12T17:45:14Z">
+        <test-method status="FAIL" signature="test29_completeChildTaskOfCustomerAcceptance()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test29_completeChildTaskOfCustomerAcceptance" duration-ms="348" started-at="2016-07-12T19:13:40Z" finished-at="2016-07-12T19:13:40Z">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Element is not clickable at point (244, 782.5). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 81 milliseconds
+              <![CDATA[argumen5ts is not defined
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (244, 782.5). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 81 milliseconds
+              <![CDATA[org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Command duration or timeout: 12 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -835,16 +1379,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test29_completeChildTaskOfCustomerAcceptance(StatusUpdate.java:444)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.provenir.automation.framework.helper.Credit360Helper.reassignTaskOfCompleteApplication(Credit360Helper.java:393)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test29_completeChildTaskOfCustomerAcceptance(StatusUpdate.java:445)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -865,110 +1402,57 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: unknown
+	at <anonymous class>.anonymous(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp line 69 > Function:1)
+	at <anonymous class>.handleEvaluateEvent(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp:69)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test29_completeChildTaskOfCustomerAcceptance -->
-        <test-method status="FAIL" signature="test30_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test30_refreshPage" duration-ms="7257" started-at="2016-07-12T17:45:14Z" finished-at="2016-07-12T17:45:22Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 68 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 68 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test30_refreshPage(StatusUpdate.java:458)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="test30_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test30_refreshPage" duration-ms="18408" started-at="2016-07-12T19:13:40Z" finished-at="2016-07-12T19:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test30_refreshPage -->
-        <test-method status="FAIL" signature="test31_verifyStatusAsDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test31_verifyStatusAsDueDiligence" duration-ms="2153" started-at="2016-07-12T17:45:22Z" finished-at="2016-07-12T17:45:24Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="test31_verifyStatusAsDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test31_verifyStatusAsDueDiligence" duration-ms="7346" started-at="2016-07-12T19:13:59Z" finished-at="2016-07-12T19:14:06Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 72 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 72 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+Command duration or timeout: 5.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test31_verifyStatusAsDueDiligence(StatusUpdate.java:468)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifyDueDiligence(Credit360Helper.java:759)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test31_verifyStatusAsDueDiligence(StatusUpdate.java:469)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -989,29 +1473,36 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test31_verifyStatusAsDueDiligence -->
-        <test-method status="FAIL" signature="test32_completeDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test32_completeDueDiligence" duration-ms="30985" started-at="2016-07-12T17:45:24Z" finished-at="2016-07-12T17:45:55Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="FAIL" signature="test32_completeDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test32_completeDueDiligence" duration-ms="9167" started-at="2016-07-12T19:14:06Z" finished-at="2016-07-12T19:14:15Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.01 seconds
+              <![CDATA[argumen5ts is not defined
+Command duration or timeout: 15 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.01 seconds
+              <![CDATA[org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Command duration or timeout: 15 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1021,16 +1512,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.expandCustomerAcceptance(Credit360Helper.java:702)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test32_completeDueDiligence(StatusUpdate.java:480)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.provenir.automation.framework.helper.Credit360Helper.reassignTaskOfDueDiligence(Credit360Helper.java:344)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test32_completeDueDiligence(StatusUpdate.java:482)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1051,37 +1535,35 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+	at <anonymous class>.anonymous(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp line 69 > Function:1)
+	at <anonymous class>.handleEvaluateEvent(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp:69)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test32_completeDueDiligence -->
-        <test-method status="FAIL" signature="test33_completeChildTasksOfDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test33_completeChildTasksOfDueDiligence" duration-ms="5154" started-at="2016-07-12T17:45:55Z" finished-at="2016-07-12T17:46:00Z">
-          <exception class="org.openqa.selenium.ElementNotVisibleException">
+        <test-method status="FAIL" signature="test33_completeChildTasksOfDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test33_completeChildTasksOfDueDiligence" duration-ms="461" started-at="2016-07-12T19:14:15Z" finished-at="2016-07-12T19:14:16Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.06 seconds
+              <![CDATA[argumen5ts is not defined
+Command duration or timeout: 29 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
-Command duration or timeout: 5.06 seconds
+              <![CDATA[org.openqa.selenium.WebDriverException: argumen5ts is not defined
+Command duration or timeout: 29 milliseconds
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
@@ -1091,16 +1573,9 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.expandDueDiligence(Credit360Helper.java:709)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test33_completeChildTasksOfDueDiligence(StatusUpdate.java:498)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:577)
+	at com.provenir.automation.framework.helper.Credit360Helper.reassignTaskOFDueDiligenceChklist(Credit360Helper.java:354)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test33_completeChildTasksOfDueDiligence(StatusUpdate.java:499)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1121,118 +1596,57 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
-Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Caused by: org.openqa.selenium.WebDriverException: argumen5ts is not defined
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
 Driver info: driver.version: unknown
-	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:10045)
-	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12597)
-	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12614)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous261732337452517893webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+	at <anonymous class>.anonymous(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp line 69 > Function:1)
+	at <anonymous class>.handleEvaluateEvent(http://was01.provapps.com:9080/ProvAppCLWeb/default.jsp:69)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test33_completeChildTasksOfDueDiligence -->
-        <test-method status="FAIL" signature="test34_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test34_refreshPage" duration-ms="7229" started-at="2016-07-12T17:46:00Z" finished-at="2016-07-12T17:46:07Z">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 81 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (771, 23). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 81 milliseconds
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
-System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickHome(Credit360Helper.java:571)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test34_refreshPage(StatusUpdate.java:522)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-	at java.lang.Thread.run(Unknown Source)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method status="PASS" signature="test34_refreshPage()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test34_refreshPage" duration-ms="18057" started-at="2016-07-12T19:14:16Z" finished-at="2016-07-12T19:14:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test34_refreshPage -->
-        <test-method status="FAIL" signature="test35_verifyStatusAsDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="test35_verifyStatusAsDueDiligence" duration-ms="2149" started-at="2016-07-12T17:46:07Z" finished-at="2016-07-12T17:46:09Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method status="FAIL" signature="test35_verifyStatusAsDueDiligence()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="test35_verifyStatusAsDueDiligence" duration-ms="7303" started-at="2016-07-12T19:14:34Z" finished-at="2016-07-12T19:14:41Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 66 milliseconds
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+Command duration or timeout: 5.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Element is not clickable at point (95, 137). Other element would receive the click: <div class="screenoverlay" style="height: 2385px; z-index: 1002;"></div>
-Command duration or timeout: 66 milliseconds
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+Command duration or timeout: 5.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
 System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
-Session ID: 00224fc4-092c-403a-85e7-4bdab4cc1243
+*** Element info: {Using=xpath, value=.//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]}
+Session ID: 12205677-43c9-4914-9607-53fefeabf286
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.2}]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy9.click(Unknown Source)
-	at com.provenir.automation.framework.helper.Credit360Helper.clickCreditSummary(Credit360Helper.java:808)
-	at com.provenir.automation.framework.testcases.StatusUpdate.test35_verifyStatusAsDueDiligence(StatusUpdate.java:532)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at com.provenir.automation.framework.helper.Credit360Helper.verifyDueDiligence(Credit360Helper.java:759)
+	at com.provenir.automation.framework.testcases.StatusUpdate.test35_verifyStatusAsDueDiligence(StatusUpdate.java:533)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1253,42 +1667,24 @@ Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cs
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":".//*[@id='UPSERTCUSTCREDREQFORM']/div/div[6]/div[2]/div[1]/div[contains(.,'Due Diligence')]"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:03:33'
+System info: host: 'parasharb-w7', ip: '172.27.103.103', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_75'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10723)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/PARASH~1/AppData/Local/Temp/anonymous8154662038813502347webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:623)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test35_verifyStatusAsDueDiligence -->
-        <test-method status="FAIL" signature="tearDown()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@6bf15d27]" name="tearDown" is-config="true" duration-ms="0" started-at="2016-07-12T17:46:10Z" finished-at="2016-07-12T17:46:10Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at com.provenir.automation.framework.utility.TestCaseExecutor.tearDown(TestCaseExecutor.java:89)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:308)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.provenir.automation.framework.testcases.StatusUpdate@1081350a]" name="tearDown" is-config="true" duration-ms="4626" started-at="2016-07-12T19:14:41Z" finished-at="2016-07-12T19:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
-    </test> <!-- Firefox Test -->
+    </test> <!-- Firefox Test5 -->
   </suite> <!-- Automation test suite -->
 </testng-results>

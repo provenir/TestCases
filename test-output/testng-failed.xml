@@ -3,35 +3,195 @@
 <suite thread-count="1" name="Failed suite [Automation test suite]" parallel="tests">
   <parameter name="environment" value="src/com/provenir/automation/framework/config/Env.properties"/>
   <parameter name="browser" value="Firefox"/>
-  <test name="Firefox Test(failed)" parallel="tests">
+  <test name="Firefox Test1(failed)" parallel="tests">
     <parameter name="browser" value="Firefox"/>
     <classes>
+      <class name="com.provenir.automation.framework.testcases.DefaultRoles">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.DefaultRoles -->
+      <class name="com.provenir.automation.framework.testcases.WorkflowsTasks">
+        <methods>
+          <include name="test3_verifyTasks"/>
+          <include name="beforeMethod"/>
+          <include name="test6_verifyTasksForNewRequestForMoney"/>
+          <include name="test4_verifyNewRequestForMoney"/>
+          <include name="beforeTest"/>
+          <include name="test1_verifyWorkflowforSmallBusinessDisplayed"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.WorkflowsTasks -->
+      <class name="com.provenir.automation.framework.testcases.Checklists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Checklists -->
+      <class name="com.provenir.automation.framework.testcases.RegB">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.RegB -->
+      <class name="com.provenir.automation.framework.testcases.BOA_Wizard">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.BOA_Wizard -->
       <class name="com.provenir.automation.framework.testcases.StatusUpdate">
         <methods>
-          <include name="test9_saveIndividualCustDetails"/>
-          <include name="test21_verifyCreditStatusAsSubmitted"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
+    </classes>
+  </test> <!-- Firefox Test1(failed) -->
+  <test name="Firefox Test3(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.provenir.automation.framework.testcases.DefaultRoles">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.DefaultRoles -->
+      <class name="com.provenir.automation.framework.testcases.WorkflowsTasks">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.WorkflowsTasks -->
+      <class name="com.provenir.automation.framework.testcases.Checklists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Checklists -->
+      <class name="com.provenir.automation.framework.testcases.RegB">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.RegB -->
+      <class name="com.provenir.automation.framework.testcases.BOA_Wizard">
+        <methods>
+          <include name="test14_saveTransactionDetails"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.BOA_Wizard -->
+      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
+    </classes>
+  </test> <!-- Firefox Test3(failed) -->
+  <test name="Firefox Test4(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.provenir.automation.framework.testcases.DefaultRoles">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.DefaultRoles -->
+      <class name="com.provenir.automation.framework.testcases.WorkflowsTasks">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.WorkflowsTasks -->
+      <class name="com.provenir.automation.framework.testcases.Checklists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Checklists -->
+      <class name="com.provenir.automation.framework.testcases.BOA_Wizard">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.BOA_Wizard -->
+      <class name="com.provenir.automation.framework.testcases.RegB">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="test13_completeTasksOnTaskManagement"/>
+          <include name="test15_refreshPage"/>
+          <include name="test14_completeTaskOfPolicyException"/>
+          <include name="test16_gotoRegBSection"/>
+          <include name="beforeTest"/>
+          <include name="test17_verifyRegBStartDate"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.RegB -->
+      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="tearDown"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
+    </classes>
+  </test> <!-- Firefox Test4(failed) -->
+  <test name="Firefox Test5(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.provenir.automation.framework.testcases.DefaultRoles">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.DefaultRoles -->
+      <class name="com.provenir.automation.framework.testcases.WorkflowsTasks">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.WorkflowsTasks -->
+      <class name="com.provenir.automation.framework.testcases.Checklists">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.Checklists -->
+      <class name="com.provenir.automation.framework.testcases.RegB">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.RegB -->
+      <class name="com.provenir.automation.framework.testcases.BOA_Wizard">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.provenir.automation.framework.testcases.BOA_Wizard -->
+      <class name="com.provenir.automation.framework.testcases.StatusUpdate">
+        <methods>
+          <include name="test35_verifyStatusAsDueDiligence"/>
           <include name="test33_completeChildTasksOfDueDiligence"/>
+          <include name="test31_verifyStatusAsDueDiligence"/>
+          <include name="test29_completeChildTaskOfCustomerAcceptance"/>
+          <include name="test32_completeDueDiligence"/>
           <include name="test28_completeCustomerAcceptance"/>
           <include name="test27_verifyCreditStatus"/>
           <include name="beforeMethod"/>
           <include name="test24_verifyCreditStatusAsCreditDecisioning"/>
+          <include name="test14_saveTransactionDetails"/>
           <include name="beforeTest"/>
           <include name="tearDown"/>
-          <include name="test12_saveCollateralInformation"/>
-          <include name="test34_refreshPage"/>
           <include name="initialize"/>
-          <include name="test35_verifyStatusAsDueDiligence"/>
-          <include name="test26_refreshPage"/>
-          <include name="test25_completeDecision"/>
-          <include name="test31_verifyStatusAsDueDiligence"/>
-          <include name="test29_completeChildTaskOfCustomerAcceptance"/>
-          <include name="test32_completeDueDiligence"/>
-          <include name="test23_refreshPage"/>
-          <include name="test22_completePreAnalysis"/>
-          <include name="test14_saveTransactionDetails"/>
-          <include name="test30_refreshPage"/>
         </methods>
       </class> <!-- com.provenir.automation.framework.testcases.StatusUpdate -->
     </classes>
-  </test> <!-- Firefox Test(failed) -->
+  </test> <!-- Firefox Test5(failed) -->
 </suite> <!-- Failed suite [Automation test suite] -->

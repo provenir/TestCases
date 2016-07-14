@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>TestNG:  Firefox Test2</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox Test2</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>13/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jul 12 18:53:30 IST 2016</td>
+</tr>
+<tr><td>Total time:</td><td>100 seconds (100162 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test0_landingPage()'><b>test0_landingPage</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>27</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test10_verifyDueDiligenceChecklist()'><b>test10_verifyDueDiligenceChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test11_verifyApplicationChecklist()'><b>test11_verifyApplicationChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test12_verifyApplicationChecklistItems()'><b>test12_verifyApplicationChecklistItems</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>11</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test1_verifyEligibilityChecklist()'><b>test1_verifyEligibilityChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>5</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test2_verifyPolicyExceptionForSmallBusiness()'><b>test2_verifyPolicyExceptionForSmallBusiness</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test3_verifyConditionsAndPrecedent()'><b>test3_verifyConditionsAndPrecedent</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test4_verifyClosingChecklist()'><b>test4_verifyClosingChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test5_verifyPostBookingQAChecklist()'><b>test5_verifyPostBookingQAChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test6_verifyPreBookingChecklist()'><b>test6_verifyPreBookingChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test7_verifyPreFundingChecklist()'><b>test7_verifyPreFundingChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test8_verifyPreClosingChecklist()'><b>test8_verifyPreClosingChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+<tr>
+<td title='com.provenir.automation.framework.testcases.Checklists.test9_verifyDocumentChecklist()'><b>test9_verifyDocumentChecklist</b><br>Test class: com.provenir.automation.framework.testcases.Checklists</td>
+<td></td>
+<td>3</td>
+<td>com.provenir.automation.framework.testcases.Checklists@4f1fc720</td></tr>
+</table><p>
+</body>
+</html>
