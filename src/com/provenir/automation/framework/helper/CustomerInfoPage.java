@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -1630,7 +1631,7 @@ public class CustomerInfoPage {
 		dateOfGAR.sendKeys(GARDate);
 		Util.waitForAJAX(driver);
 	}
-	
+
 	public void enterGARAsOfDate() {
 		Util.waitForAJAX(driver);
 		dateOfGAR.clear();
@@ -1648,7 +1649,7 @@ public class CustomerInfoPage {
 		annualReviewDate.clear();
 		annualReviewDate.sendKeys(annualReviewDt);
 	}
-	
+
 	public void enterAnnualReviewDate() {
 		annualReviewDate.clear();
 		annualReviewDate.sendKeys("2013-06-03");
@@ -1658,7 +1659,7 @@ public class CustomerInfoPage {
 		lastTaxReturn.clear();
 		lastTaxReturn.sendKeys(lastTaxReturnDt);
 	}
-	
+
 	public void enterLastTaxReturnDate() {
 		lastTaxReturn.clear();
 		lastTaxReturn.sendKeys("2013-06-07");
@@ -1668,7 +1669,7 @@ public class CustomerInfoPage {
 		interimReviewDate.clear();
 		interimReviewDate.sendKeys(interimReviewDt);
 	}
-	
+
 	public void enterInterimReviewDate() {
 		interimReviewDate.clear();
 		interimReviewDate.sendKeys("2014-06-07");
@@ -1678,7 +1679,7 @@ public class CustomerInfoPage {
 		fiscalYearDate.clear();
 		fiscalYearDate.sendKeys(fiscalYearDt);
 	}
-	
+
 	public void enterFiscalYearEndDate() {
 		fiscalYearDate.clear();
 		fiscalYearDate.sendKeys("16");
@@ -1810,6 +1811,8 @@ public class CustomerInfoPage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", saveButton);
 		Util.waitForAJAX(driver);
+		Util.waitForAJAX(driver);
+		Util.waitForLoaderToFinish(driver);
 		return this;
 	}
 
@@ -2718,13 +2721,22 @@ public class CustomerInfoPage {
 		return cnt;
 	}
 
-	public void clickMatchPopup() {
+	public void clickMatchPopup() throws InterruptedException {
 		Util.waitForAJAX(driver);
 		Util.waitForElement(driver, custPopUp, 30);
-		WebElement e = driver.findElement(By.xpath(".//*[@id='useCurrentCust']/span/span"));
+		WebElement e = driver.findElement(By
+				.xpath(".//*[@id='useCurrentCust']/span/span"));
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", e);
 		Util.waitForAJAX(driver);
+	}
+
+	public void scrollBottom() throws InterruptedException {
+		Thread.sleep(4000);
+		WebElement e = driver.findElement(By
+				.xpath(".//*[@id='currCustDiv']/div[1]"));
+		e.click();
+		e.sendKeys(Keys.END);
 	}
 
 	public void selectedCustId() {

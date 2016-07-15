@@ -25,13 +25,15 @@
 			<class name="com.provenir.automation.framework.testcases.Checklists" />
 		</classes>
 	</test>
-	
+
+
 	<test name="Firefox Test3">
 	<parameter name="browser" value="Firefox" />
 		<classes>
 			<class name="com.provenir.automation.framework.testcases.BOA_Wizard" />
 		</classes>
 	</test>
+
 	
 	<test name="Firefox Test4">
 	<parameter name="browser" value="Firefox" />

@@ -163,6 +163,8 @@ public class BOA_Wizard extends TestCaseExecutor {
 
 		customerInfoPage.clickSaveButton();
 
+		customerInfoPage.scrollBottom();
+		
 		customerInfoPage.clickMatchPopup();
 	}
 
@@ -217,7 +219,7 @@ public class BOA_Wizard extends TestCaseExecutor {
 		customerInfoPage.enterZipCode();
 
 		customerInfoPage = customerInfoPage.clickSaveButton();
-
+		
 		customerInfoPage.clickMatchPopup();
 
 	}
