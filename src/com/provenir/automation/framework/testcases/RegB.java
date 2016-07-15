@@ -201,6 +201,7 @@ public class RegB extends TestCaseExecutor {
 
 		credit360Helper.expandDecision();
 		Thread.sleep(1000);
+		credit360Helper.expandDecision();
 		credit360Helper.reassignTaskOfPolicyException();
 		credit360Helper.enterAssignedUser();
 		credit360Helper.clickSaveOnReassignTask();

@@ -692,7 +692,9 @@ public class Credit360Helper {
 	public void expandDecision() {
 		Util.scrollDown(driver);
 		Util.waitForAJAX(driver);
-		expandDecision.click();
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript("arguments[0].click();", expandDecision);
+//		expandDecision.click();
 		Util.waitForAJAX(driver);
 	}
 
