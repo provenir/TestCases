@@ -234,12 +234,9 @@ public class Credit360Helper {
 
 	public void setTaskToWaived() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// js.executeScript("arguments[0].click();",
-		// actionMenuOnPolicyException);
+		
 		Thread.sleep(1000);
-		Actions action = new Actions(driver);
-		action.moveToElement(actionMenuOnPolicyException).click().build()
-				.perform();
+		js.executeScript("arguments[0].click();", actionMenuOnPolicyException);
 		Thread.sleep(1000);
 		js.executeScript("arguments[0].click();",
 				setTaskWaivedOnPolicyException);
