@@ -1133,6 +1133,7 @@ public class Facility360Details {
 	}
 
 	public void clickFacilityLnk() {
+		Util.waitForAJAX(driver);
 		facilityLnk.click();
 		Util.waitForAJAX(driver);
 	}

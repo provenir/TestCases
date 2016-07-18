@@ -160,7 +160,7 @@ public class AdminPage {
 	@FindBy(how = How.XPATH, using = ".//*[@id='valdationMsg']/div/h2")
 	private WebElement aftersaveConfirmation;
 
-	@FindBy(how = How.XPATH, using = ".//*[@id='myGrid']/div[2]/div[2]/div/div[2]/span[2]")
+	@FindBy(how = How.XPATH, using = ".//*[@id='myGrid']/div/div[2]/div/div[2]/span[2]")
 	private WebElement selectWorkflowTypeInWorkflowSummary;
 
 	@FindBy(how = How.ID, using = "backBC")
@@ -942,7 +942,7 @@ public class AdminPage {
 		Util.waitForAJAX(driver);
 		Util.waitForElementPresent(
 				driver,
-				By.xpath(".//*[@id='myGrid']/div[2]/div[2]/div/div[2]/span[2]"),
+				By.xpath("//*[@id='myGrid']/div/div[2]/div/div[2]/span[2]"),
 				10);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",
@@ -951,7 +951,7 @@ public class AdminPage {
 		Util.waitForAJAX(driver);
 		if (driver
 				.findElement(
-						By.xpath(".//*[@id='myGrid']/div[2]/div[5]/div/div[1]/div[2]"))
+						By.xpath(".//*[@id='myGrid']/div/div[5]/div/div[1]/div[2]"))
 				.getText().trim().contains("Credit")) {
 			return true;
 		} else
@@ -962,7 +962,7 @@ public class AdminPage {
 		Util.waitForAJAX(driver);
 		Util.waitForElementPresent(
 				driver,
-				By.xpath(".//*[@id='myGrid']/div[2]/div[2]/div/div[2]/span[2]"),
+				By.xpath("//*[@id='myGrid']/div/div[2]/div/div[2]/span[2]"),
 				10);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();",
@@ -971,7 +971,7 @@ public class AdminPage {
 		Util.waitForAJAX(driver);
 		if (driver
 				.findElement(
-						By.xpath(".//*[@id='myGrid']/div[2]/div[5]/div/div[1]/div[2]"))
+						By.xpath(".//*[@id='myGrid']/div/div[5]/div/div[1]/div[2]"))
 				.getText().trim().contains("Facility")) {
 			return true;
 		} else

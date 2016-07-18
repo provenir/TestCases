@@ -70,7 +70,7 @@ public class Credit360Helper {
 	@FindBy(how = How.XPATH, using = ".//*[@id='credLineSumm']")
 	private WebElement facSumLink;
 
-	@FindBy(how = How.XPATH, using = ".//*[@id='DEWORKFLOWDEFFORM']/div/div/ul/li[30]/a/span")
+	@FindBy(how = How.XPATH, using = "//span[contains(.,'Credit level workflow')]")
 	private WebElement actionList;
 
 	@FindBy(how = How.XPATH, using = ".//*[@id='addCrdLine']")
@@ -82,7 +82,7 @@ public class Credit360Helper {
 	@FindBy(how = How.LINK_TEXT, using = "Delete")
 	private WebElement delete;
 
-	@FindBy(how = How.XPATH, using = ".//*[@id='taskManagmntContainer']//b[contains(.,'Test_facility')]")
+	@FindBy(how = How.XPATH, using = "//*[@id='taskManagmntContainer']//b[contains(.,'New Request for Money')]")
 	private WebElement verifyWFlow;
 
 	@FindBy(how = How.XPATH, using = ".//*[@id='taskManagmntContainer']/div[1]/a")
@@ -234,7 +234,7 @@ public class Credit360Helper {
 
 	public void setTaskToWaived() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		
+
 		Thread.sleep(1000);
 		js.executeScript("arguments[0].click();", actionMenuOnPolicyException);
 		Thread.sleep(1000);
@@ -511,6 +511,7 @@ public class Credit360Helper {
 		Util.waitForLoaderToFinish(driver);
 		Util.waitForLoaderToFinish(driver);
 		Util.waitForAJAX(driver);
+		Util.scrollDown(driver);
 	}
 
 	public void clickFacilitySummary() {
@@ -575,7 +576,7 @@ public class Credit360Helper {
 				&& creditTextOnWorkflow
 						.equalsIgnoreCase("Request HCL Corporation")
 				&& facilityWorkflowText
-						.equalsIgnoreCase("Facility_New Request for Money")
+						.equalsIgnoreCase("Facility Level Workflow")
 				&& facilityTextOnWorkflow
 						.equalsIgnoreCase("Fac for HCL Corporation")) {
 			return true;
@@ -584,7 +585,7 @@ public class Credit360Helper {
 	}
 
 	public void clickDeleteOnFacilityDetails() {
-		Util.waitForElementPresent(driver, By.xpath(""), 20);
+		Util.waitForAJAX(driver);
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", actionMenuOnFacilitySummary);
 		Util.waitForElement(driver, delete, 5);
@@ -598,7 +599,7 @@ public class Credit360Helper {
 		Util.waitForLoaderToFinish(driver);
 		Util.waitForElement(driver, verifyWFlow, 20);
 		String str = verifyWFlow.getText().trim();
-		if (str.equalsIgnoreCase("Test_facility")) {
+		if (str.equalsIgnoreCase("New Request for Money")) {
 			return true;
 		} else
 			return false;
@@ -691,7 +692,7 @@ public class Credit360Helper {
 		Util.waitForAJAX(driver);
 		JavascriptExecutor j = (JavascriptExecutor) driver;
 		j.executeScript("arguments[0].click();", expandDecision);
-//		expandDecision.click();
+		// expandDecision.click();
 		Util.waitForAJAX(driver);
 	}
 

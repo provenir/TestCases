@@ -74,8 +74,10 @@ public class FacilityLevelWorkflow extends TestCaseExecutor {
 	}
 
 	@Test(priority = 0)
-	public void test1_verifyResultsAccToWorkflowType() {
+	public void test1_verifyResultsAccToWorkflowType() throws InterruptedException {
+		Thread.sleep(3000);
 		adminPage.selectAndVerifyWorkflowTypeAsCredit();
+		Thread.sleep(3000);
 		adminPage.selectAndVerifyWorkflowTypeAsFacility();
 	}
 
@@ -251,9 +253,10 @@ public class FacilityLevelWorkflow extends TestCaseExecutor {
 	}
 
 	@Test(priority = 20)
-	public void test21_gotoFacility360() {
+	public void test21_gotoFacility360() throws InterruptedException {
 		myRequests = credit360.clickHome();
 		searchHelper = myRequests.srchAssociatedFacility();
+		Thread.sleep(2000);
 		facility360 = searchHelper.clickFacSummary();
 		facility360.isFacilitySummaryNamePresent();
 	}
@@ -270,16 +273,18 @@ public class FacilityLevelWorkflow extends TestCaseExecutor {
 	}
 
 	@Test(priority = 23)
-	public void test24_gotoFacility360() {
+	public void test24_gotoFacility360() throws InterruptedException {
 		myRequests = facility360.clickHome();
 		searchHelper = myRequests.searchExistingFacility();
+		Thread.sleep(2000);
 		facility360 = searchHelper.clickFacSummary();
-
+		Thread.sleep(2000);
 		facility360.isFacilitySummaryNamePresent();
 	}
 
 	@Test(priority = 24)
-	public void test25_verifyTaskManagementLoadedOnFacility360() {
+	public void test25_verifyTaskManagementLoadedOnFacility360() throws InterruptedException {
+		Thread.sleep(2000);
 		facility360.clickTaskManagement();
 		facility360.verifyTaskMgmtSectionLoaded();
 		facility360.verifyOrderOfWorkflows();
@@ -293,10 +298,12 @@ public class FacilityLevelWorkflow extends TestCaseExecutor {
 	}
 
 	@Test(priority = 26)
-	public void test27_verifyWorkflowOrderInCredit360() {
+	public void test27_verifyWorkflowOrderInCredit360() throws InterruptedException {
 		myRequests = facility360.clickHome();
 		searchHelper = myRequests.searchExistingRequest();
+		Thread.sleep(3000);
 		credit360 = searchHelper.clickCreditSummary();
+		Thread.sleep(3000);
 		credit360.clickTaskManagement();
 		credit360.verifyWorkflowOrderOnCredit360();
 	}
@@ -322,10 +329,12 @@ public class FacilityLevelWorkflow extends TestCaseExecutor {
 	}
 
 	@Test(priority = 30)
-	public void test31_deleteFacility() {
+	public void test31_deleteFacility() throws InterruptedException {
 		myRequests = facility360.clickHome();
 		searchHelper = myRequests.searchExistingRequest1();
+		Thread.sleep(2000);
 		credit360 = searchHelper.clickCreditSummary();
+		Thread.sleep(2000);
 	}
 
 	@Test(priority = 31)
