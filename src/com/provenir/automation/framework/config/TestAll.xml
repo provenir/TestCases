@@ -15,6 +15,19 @@
 	<test name="Firefox Test1">
 	<parameter name="browser" value="Firefox" />
 		<classes>
+			<class name="com.provenir.automation.framework.testcases.BOA_Wizard" />
+			<class name="com.provenir.automation.framework.testcases.Wizard" />
+			<class name="com.provenir.automation.framework.testcases.Checklists" />
+			<class name="com.provenir.automation.framework.testcases.Collateral360" />
+			<class name="com.provenir.automation.framework.testcases.Credit360" />
+			<class name="com.provenir.automation.framework.testcases.Customer360" />
+			<class name="com.provenir.automation.framework.testcases.DefaultRoles" />
+			<class name="com.provenir.automation.framework.testcases.FacilityLevelWorkflow" />
+			<class name="com.provenir.automation.framework.testcases.FilteredQueues" />
+			<class name="com.provenir.automation.framework.testcases.RegB" />
+			<class name="com.provenir.automation.framework.testcases.RuleBasedSecurity" />
+			<class name="com.provenir.automation.framework.testcases.StatusUpdate" />
+			<class name="com.provenir.automation.framework.testcases.Wizard" />			
 			<class name="com.provenir.automation.framework.testcases.WorkflowsTasks" />
 		</classes>
 	</test>
